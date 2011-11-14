@@ -1,0 +1,18 @@
+<% content_for :css do %>
+	<%= include_stylesheets :all, :home, :media => "all" %>
+<% end %>
+
+<div id="home">
+	<h1>Kitify <span class="k-scriptfont">Better Bills of Materials</span></h1>
+	
+	<a href="/new" class="btn primary">Start a new Kit</a>
+</div>
+
+<% content_for :js do %>
+	<%= include_javascripts :all %>
+	<script>
+		$(function() {
+			Kitify.Manager().init();
+		});
+	</script>
+<% end %>

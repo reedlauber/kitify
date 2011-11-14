@@ -1,0 +1,8 @@
+/*
+ * #93d050 green
+ */
+
+.k-shadow { box-shadow:0 2px 8px rgba(0, 0, 0, 0.3); }
+.k-shadow-big { box-shadow:0 2px 16px rgba(0, 0, 0, 0.5); }
+
+.error { border-color:#ee5f5b;color:#b94a48; }

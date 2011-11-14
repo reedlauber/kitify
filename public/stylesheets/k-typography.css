@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'LobsterRegular';
+    src: url('fonts/Lobster_1.3-webfont.eot');
+    src: url('fonts/Lobster_1.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Lobster_1.3-webfont.woff') format('woff'),
+         url('fonts/Lobster_1.3-webfont.ttf') format('truetype'),
+         url('fonts/Lobster_1.3-webfont.svg#Lobster13Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, .basefont { font-size:14px; }
+
+.k-scriptfont { font-family:'LobsterRegular',Trebuchet MS,Arial,Sans-serif; }

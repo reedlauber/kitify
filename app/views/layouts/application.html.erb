@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kitify</title>
+	<%= yield :css %>
+	<%= csrf_meta_tag %>
+</head>
+<body>
+	<div id="container">
+		<header id="header" class="topbar">
+			<div class="topbar-inner">
+				<div class="container">
+					<h3><a href="/">Kitify</a></h3>
+				</div>
+			</div>
+		</header>
+		<div id="content" class="container">
+			<div id="content-inner" class="k-shadow-big">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+	<%= yield :js %>
+</body>
+</html>

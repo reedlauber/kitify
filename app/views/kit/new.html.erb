@@ -1,0 +1,22 @@
+<% content_for :css do %>
+	<%= include_stylesheets :all, :kit, :media => "all" %>
+<% end %>
+
+<form id="newkit" action="/new" method="post">
+	<h3>Kit Name</h3>
+	<input id="title" name="title" type="text" class="span6">
+	<button id="newkit-btn" class="btn primary large">Create Kit</button>
+</form>
+
+<% content_for :js do %>
+	<%= include_javascripts :all, :newkit %>
+	<script>
+		$(function() {
+			Kitify.Manager({
+				components: {
+					kitTitle: Kitify.NewKit()
+				}
+			}).init();
+		});
+	</script>
+<% end %>

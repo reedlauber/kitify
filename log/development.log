@@ -1,0 +1,3671 @@
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/reedlauber/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 07:57:56 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (20.5ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `include_stylesheets' for #<#<Class:0x00000101d135b0>:0x00000101d103b0>):
+    2: <html>
+    3: <head>
+    4: 	<title>Kitify</title>	
+    5: 	<%= include_stylesheets :all, :media => "all" %>
+    6: 	<%= javascript_include_tag :defaults %>
+    7: 	<%= csrf_meta_tag %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1661303325917462453_2162712920__1158384261495278913'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 07:58:45 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `include_stylesheets' for #<#<Class:0x00000100e45c18>:0x00000100e42b08>):
+    2: <html>
+    3: <head>
+    4: 	<title>Kitify</title>	
+    5: 	<%= include_stylesheets :all, :media => "all" %>
+    6: 	<%= javascript_include_tag :defaults %>
+    7: 	<%= csrf_meta_tag %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1661303325917462453_2154954980__1158384261495278913'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (27.6ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 07:58:46 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `include_stylesheets' for #<#<Class:0x00000101e20de0>:0x00000101e1eb08>):
+    2: <html>
+    3: <head>
+    4: 	<title>Kitify</title>	
+    5: 	<%= include_stylesheets :all, :media => "all" %>
+    6: 	<%= javascript_include_tag :defaults %>
+    7: 	<%= csrf_meta_tag %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1661303325917462453_2163268260__1158384261495278913'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 07:59:37 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `include_stylesheets' for #<#<Class:0x00000101c5f948>:0x00000101c5d6e8>):
+    2: <html>
+    3: <head>
+    4: 	<title>Kitify</title>	
+    5: 	<%= include_stylesheets :all, :media => "all" %>
+    6: 	<%= javascript_include_tag :defaults %>
+    7: 	<%= csrf_meta_tag %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1661303325917462453_2162339280__1158384261495278913'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 07:59:38 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `include_stylesheets' for #<#<Class:0x00000100d5a1a0>:0x00000100d57388>):
+    2: <html>
+    3: <head>
+    4: 	<title>Kitify</title>	
+    5: 	<%= include_stylesheets :all, :media => "all" %>
+    6: 	<%= javascript_include_tag :defaults %>
+    7: 	<%= csrf_meta_tag %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1661303325917462453_2154450220__1158384261495278913'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 07:59:39 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `include_stylesheets' for #<#<Class:0x00000101e08178>:0x00000101e05e78>):
+    2: <html>
+    3: <head>
+    4: 	<title>Kitify</title>	
+    5: 	<%= include_stylesheets :all, :media => "all" %>
+    6: 	<%= javascript_include_tag :defaults %>
+    7: 	<%= csrf_meta_tag %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1661303325917462453_2163217280__1158384261495278913'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 07:59:39 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `include_stylesheets' for #<#<Class:0x00000101c32920>:0x00000101c301e8>):
+    2: <html>
+    3: <head>
+    4: 	<title>Kitify</title>	
+    5: 	<%= include_stylesheets :all, :media => "all" %>
+    6: 	<%= javascript_include_tag :defaults %>
+    7: 	<%= csrf_meta_tag %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1661303325917462453_2162255500__1158384261495278913'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 07:59:39 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `include_stylesheets' for #<#<Class:0x00000100c0b628>:0x00000100c04f08>):
+    2: <html>
+    3: <head>
+    4: 	<title>Kitify</title>	
+    5: 	<%= include_stylesheets :all, :media => "all" %>
+    6: 	<%= javascript_include_tag :defaults %>
+    7: 	<%= csrf_meta_tag %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1661303325917462453_2153762420__1158384261495278913'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 07:59:39 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `include_stylesheets' for #<#<Class:0x00000101deb758>:0x00000101de9070>):
+    2: <html>
+    3: <head>
+    4: 	<title>Kitify</title>	
+    5: 	<%= include_stylesheets :all, :media => "all" %>
+    6: 	<%= javascript_include_tag :defaults %>
+    7: 	<%= csrf_meta_tag %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1661303325917462453_2163157180__1158384261495278913'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:00:09 -0500
+
+LoadError (no such file to load -- sqlite3):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:01:39 -0500
+
+LoadError (no such file to load -- sqlite3):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:01:40 -0500
+
+LoadError (no such file to load -- sqlite3):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:01:57 -0500
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (3.2ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TIME ZONE[0m
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (583.6ms)
+Completed 200 OK in 590ms (Views: 587.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2011-11-13 08:01:58 -0500
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at 2011-11-13 08:01:58 -0500
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-11-13 08:01:58 -0500
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-11-13 08:01:58 -0500
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at 2011-11-13 08:01:58 -0500
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at 2011-11-13 08:01:58 -0500
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at 2011-11-13 08:01:58 -0500
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at 2011-11-13 08:01:58 -0500
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:02:21 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:05:33 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:08:50 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:11:18 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:18:59 -0500
+  Processing by HomeController#index as HTML
+ERROR: compiling _app_views_home_index_html_erb___2159250073552504180_2154780180_4059532691900190384 RAISED /Users/reedlauber/Sites/kitify/app/views/home/index.html.erb:2: syntax error, unexpected ':', expecting ')'
+...clude_stylesheets :all, :home :media => "all" );@output_buff...
+...                               ^
+Function body:           def _app_views_home_index_html_erb___2159250073552504180_2154780180_4059532691900190384(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "home/index";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append_if_string=  content_for :css do 
+@output_buffer.safe_concat('	');@output_buffer.append= ( include_stylesheets :all, :home :media => "all" );@output_buffer.safe_concat('
+'); end 
+@output_buffer.safe_concat('
+');@output_buffer.append_if_string=  content_for :js do 
+@output_buffer.safe_concat('	');@output_buffer.append= ( include_javascripts :all );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	<script>
+		$(function() {
+			Kitify.Manager().init();
+		});
+	</script>
+'); end ;@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `module_eval'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `compile'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `block in render'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/reedlauber/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:441:in `_run__525254432828746942__process_action__4057894565624681188__callbacks'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `block in action'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/Users/reedlauber/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/reedlauber/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/reedlauber/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered home/index.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (/Users/reedlauber/Sites/kitify/app/views/home/index.html.erb:2: syntax error, unexpected ':', expecting ')'
+...clude_stylesheets :all, :home :media => "all" );@output_buff...
+...                               ^):
+    1: <% content_for :css do %>
+    2: 	<%= include_stylesheets :all, :home :media => "all" %>
+    3: <% end %>
+    4: 
+    5: <% content_for :js do %>
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (33.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:19:07 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:21:06 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:21:40 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:21:50 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:22:18 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:22:46 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:22:54 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:23:22 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:23:39 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:23:52 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:23:57 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:25:37 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:25:42 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:26:24 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:26:33 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:27:07 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:27:34 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:28:16 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:28:22 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:35:30 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:35:48 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 42ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-13 08:36:15 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:46:24 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:47:17 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:47:28 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:48:13 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:48:31 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:49:06 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:49:52 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:49:58 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:50:01 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:50:05 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:51:44 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:52:17 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:52:41 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:52:45 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 08:53:31 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:00:11 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:00:43 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:01:05 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:01:30 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:04:12 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:05:53 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:06:53 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:14:05 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 43ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:14:26 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:14:54 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:15:11 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:16:12 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:16:21 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:17:23 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:19:54 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:22:40 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:22:53 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:24:20 -0500
+  Processing by KitController#new as HTML
+Rendered kit/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:58:21 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:58:39 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:59:14 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 09:59:42 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 10:23:36 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 30ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 10:24:11 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 10:24:29 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 10:24:35 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 10:25:24 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 10:26:47 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 10:28:50 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 10:32:59 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2011-11-13 10:33:01 -0500
+
+AbstractController::ActionNotFound (The action 'create' could not be found for KitController):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2011-11-13 10:33:05 -0500
+
+ActionController::RoutingError (No route matches "/images/favicon.ico"):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 10:34:12 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 10:35:00 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 10:35:24 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2011-11-13 10:35:51 -0500
+
+AbstractController::ActionNotFound (The action 'create' could not be found for KitController):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (67.9ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TIME ZONE[0m
+  [1m[35mSQL (128.8ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (348.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  SHOW search_path
+  [1m[36mSQL (61.2ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+[0m
+  [1m[35mSQL (8.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_info'
+ 
+[0m
+  [1m[35mSQL (14.9ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (17.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (2.6ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateKits (20111113153910)
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (101.6ms)[0m  CREATE TABLE "kits" ("id" serial primary key, "title" character varying(255), "token" character varying(255), "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (4.4ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (41.4ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+  [1m[36mPK and custom sequence (4.3ms)[0m  [1m SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111113153910')
+  [1m[36mPK and serial sequence (2.0ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+[0m
+  [1m[35mPK and custom sequence (1.0ms)[0m   SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (1.8ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (2.9ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (2.0ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"kits"'::regclass
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'kits'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 11:19:58 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2011-11-13 11:20:05 -0500
+  Processing by KitController#create as HTML
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template kit/create with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/reedlauber/Sites/kitify/app/views"):
+  
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2011-11-13 11:25:31 -0500
+  Processing by KitController#create as HTML
+Rendered kit/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 94ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2011-11-13 11:27:25 -0500
+  Processing by KitController#create as HTML
+Completed 500 Internal Server Error in 3ms
+
+ArgumentError (wrong number of arguments (0 for 1..2)):
+  app/controllers/kit_controller.rb:21:in `throw'
+  app/controllers/kit_controller.rb:21:in `create'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-13 11:28:03 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2011-11-13 11:28:08 -0500
+  Processing by KitController#create as HTML
+  Parameters: {"title"=>"my first kit"}
+  [1m[35mSQL (27.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Completed 500 Internal Server Error in 44ms
+
+NameError (uninitialized constant KitController::Token):
+  app/controllers/kit_controller.rb:13:in `create'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2011-11-13 11:47:19 -0500
+  Processing by KitController#create as HTML
+  Parameters: {"title"=>"my first kit"}
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (39.7ms)[0m  SELECT COUNT(*) FROM "kits" WHERE (token = 'zeDVvKzk')
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (15.0ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (3.1ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"kits"'::regclass
+  [1m[36mSQL (49.5ms)[0m  [1mINSERT INTO "kits" ("title", "token", "created_at", "updated_at") VALUES ('my first kit', 'zeDVvKzk', '2011-11-13 16:47:19.664812', '2011-11-13 16:47:19.664812') RETURNING "id"[0m
+  [1m[35mSQL (71.6ms)[0m  COMMIT
+Completed 500 Internal Server Error in 496ms
+
+NoMethodError (undefined method `slug=' for #<Kit:0x0000010264cd20>):
+  app/models/kit.rb:25:in `generate_slug'
+  app/controllers/kit_controller.rb:16:in `create'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (48.7ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TIME ZONE[0m
+  [1m[35mSQL (4.4ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (2.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateKits (20111113153910)
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (56.2ms)[0m  [1mDROP TABLE "kits"[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mAREL (1.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20111113153910'[0m
+  [1m[35mSQL (6.7ms)[0m  COMMIT
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.5ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.1ms)[0m  [1mSHOW TIME ZONE[0m
+  [1m[35mSQL (2.9ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (2.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateKits (20111113153910)
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (98.1ms)[0m  [1mCREATE TABLE "kits" ("id" serial primary key, "title" character varying(255), "token" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (15.9ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+[0m
+  [1m[35mPK and custom sequence (12.5ms)[0m   SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111113153910')[0m
+  [1m[35mPK and serial sequence (2.4ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+  [1m[36mPK and custom sequence (1.5ms)[0m  [1m SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+[0m
+  [1m[35mSQL (2.2ms)[0m  COMMIT
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (1.3ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (1.9ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"kits"'::regclass
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW search_path[0m
+  [1m[35mSQL (2.2ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'kits'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+
+
+Started POST "/new" for 127.0.0.1 at 2011-11-13 11:48:43 -0500
+  Processing by KitController#create as HTML
+  Parameters: {"title"=>"my first kit"}
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT COUNT(*) FROM "kits" WHERE (token = 'YnvCPr9A')
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (1.9ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"kits"'::regclass
+[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "kits" ("title", "token", "created_at", "updated_at") VALUES ('my first kit', 'YnvCPr9A', '2011-11-13 16:48:43.949973', '2011-11-13 16:48:43.949973') RETURNING "id"
+  [1m[36mSQL (55.9ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 76ms
+
+NoMethodError (undefined method `slug=' for #<Kit:0x000001026ba258>):
+  app/models/kit.rb:25:in `generate_slug'
+  app/controllers/kit_controller.rb:16:in `create'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.5ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.1ms)[0m  [1mSHOW TIME ZONE[0m
+  [1m[35mSQL (3.8ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (1.7ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (79.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (3.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateKits (20111113153910)
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mSQL (5.5ms)[0m  [1mDROP TABLE "kits"[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mAREL (1.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20111113153910'[0m
+  [1m[35mSQL (8.6ms)[0m  COMMIT
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.5ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.1ms)[0m  [1mSHOW TIME ZONE[0m
+  [1m[35mSQL (3.1ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (4.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateKits (20111113153910)
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (54.4ms)[0m  [1mCREATE TABLE "kits" ("id" serial primary key, "title" character varying(255), "token" character varying(255), "slug" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (3.2ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+[0m
+  [1m[35mPK and custom sequence (1.7ms)[0m   SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111113153910')[0m
+  [1m[35mPK and serial sequence (1.7ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+  [1m[36mPK and custom sequence (0.8ms)[0m  [1m SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+[0m
+  [1m[35mSQL (47.1ms)[0m  COMMIT
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (2.0ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"kits"'::regclass
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW search_path[0m
+  [1m[35mSQL (2.0ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'kits'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+
+
+Started POST "/new" for 127.0.0.1 at 2011-11-13 11:50:49 -0500
+  Processing by KitController#create as HTML
+  Parameters: {"title"=>"my first kit"}
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT COUNT(*) FROM "kits" WHERE (token = 'CL6SzRZ9')[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (1.9ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"kits"'::regclass
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "kits" ("title", "token", "slug", "created_at", "updated_at") VALUES ('my first kit', 'CL6SzRZ9', NULL, '2011-11-13 16:50:49.605954', '2011-11-13 16:50:49.605954') RETURNING "id"[0m
+  [1m[35mSQL (49.7ms)[0m  COMMIT
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (3.6ms)[0m  UPDATE "kits" SET "slug" = 'my-first-kit-1', "updated_at" = '2011-11-13 16:50:49.662044' WHERE "kits"."id" = 1
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/my-first-kit-1/CL6SzRZ9
+Completed 500 Internal Server Error in 79ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/kit_controller.rb:21:in `create'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (35.6ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.3ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2011-11-13 11:51:19 -0500
+  Processing by KitController#create as HTML
+  Parameters: {"title"=>"my first kit"}
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM "kits" WHERE (token = 'scZGsb3s')[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (1.8ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"kits"'::regclass
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "kits" ("title", "token", "slug", "created_at", "updated_at") VALUES ('my first kit', 'scZGsb3s', NULL, '2011-11-13 16:51:19.929431', '2011-11-13 16:51:19.929431') RETURNING "id"[0m
+  [1m[35mSQL (2.4ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "kits" SET "slug" = 'my-first-kit-2', "updated_at" = '2011-11-13 16:51:19.937361' WHERE "kits"."id" = 2
+  [1m[36mSQL (45.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/my-first-kit-2/scZGsb3s
+Completed 302 Found in 70ms
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 11:51:19 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+Completed 500 Internal Server Error in 8ms
+
+NameError (undefined local variable or method `param' for #<KitController:0x000001026c8e20>):
+  app/controllers/kit_controller.rb:3:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 11:51:34 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+Rendered kit/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 18ms (Views: 10.5ms | ActiveRecord: 52.9ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 11:52:19 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2')
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+Rendered kit/index.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `title' for #<ActiveRecord::Relation:0x00000102700cf8>):
+    5: <div id="kit" class="k-kit">
+    6: 	<div class="k-kit-title">
+    7: 		<div class="k-kit-title-label" data-val="">
+    8: 			<h2><%=@kit.title %></h2>
+    9: 		</div>
+    10: 		<div class="k-kit-title-input">
+    11: 			<input type="text" id="kit-title" value="" class="span5">
+  app/views/kit/index.html.erb:8:in `_app_views_kit_index_html_erb__3984595691284846960_2167919040_4059532691900190384'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 11:52:37 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+Rendered kit/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 18ms (Views: 11.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 11:53:00 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+Rendered kit/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 17ms (Views: 7.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 11:53:08 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.7ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered kit/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 22ms (Views: 12.3ms | ActiveRecord: 1.5ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.5ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.1ms)[0m  [1mSHOW TIME ZONE[0m
+  [1m[35mSQL (3.4ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (2.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateKits (20111113153910)
+Migrating to CreateItems (20111113220846)
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.5ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.1ms)[0m  [1mSHOW TIME ZONE[0m
+  [1m[35mSQL (2.6ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (2.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateKits (20111113153910)
+Migrating to CreateItems (20111113220846)
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (66.7ms)[0m  [1mCREATE TABLE "items" ("id" serial primary key, "kit_id" integer, "name" character varying(255), "quantity" integer, "merchant_url" character varying(255), "price" decimal, "notes" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (2.6ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+[0m
+  [1m[35mPK and custom sequence (1.6ms)[0m   SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111113220846')[0m
+  [1m[35mPK and serial sequence (1.5ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+  [1m[36mPK and custom sequence (0.8ms)[0m  [1m SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+[0m
+  [1m[35mSQL (1.4ms)[0m  COMMIT
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (1.9ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"items"'::regclass
+  [1m[36mSQL (0.1ms)[0m  [1mSHOW search_path[0m
+  [1m[35mSQL (1.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'items'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (1.8ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"kits"'::regclass
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'kits'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+[0m
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 17:34:22 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (1.0ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered kit/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 172ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.count):
+    23: 			</tr>
+    24: 		</thead>
+    25: 		<tbody>
+    26: 			<% if($items.count == 0) %>
+    27: 			<tr class="">
+    28: 				<td colspan="5">...</td>
+    29: 			</tr>
+  app/views/kit/index.html.erb:26:in `_app_views_kit_index_html_erb__3984595691284846960_2167541400_4059532691900190384'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  [1m[36mItem Load (21.5ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = )[0m
+PGError: ERROR:  syntax error at or near ")"
+LINE 1: SELECT "items".* FROM "items" WHERE (kit_id = )
+                                                      ^
+: SELECT "items".* FROM "items" WHERE (kit_id = )
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (24.7ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.9ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 17:34:39 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = )[0m
+PGError: ERROR:  syntax error at or near ")"
+LINE 1: SELECT COUNT(*) FROM "items" WHERE (kit_id = )
+                                                     ^
+: SELECT COUNT(*) FROM "items" WHERE (kit_id = )
+Rendered kit/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (PGError: ERROR:  syntax error at or near ")"
+LINE 1: SELECT COUNT(*) FROM "items" WHERE (kit_id = )
+                                                     ^
+: SELECT COUNT(*) FROM "items" WHERE (kit_id = )):
+    23: 			</tr>
+    24: 		</thead>
+    25: 		<tbody>
+    26: 			<% if(@items.count == 0) %>
+    27: 			<tr class="">
+    28: 				<td colspan="5">...</td>
+    29: 			</tr>
+  app/views/kit/index.html.erb:26:in `_app_views_kit_index_html_erb__3984595691284846960_2181091080_4059532691900190384'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = )
+PGError: ERROR:  syntax error at or near ")"
+LINE 1: SELECT "items".* FROM "items" WHERE (kit_id = )
+                                                      ^
+: SELECT "items".* FROM "items" WHERE (kit_id = )
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 17:34:59 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 33ms (Views: 9.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 17:37:50 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 33ms (Views: 9.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 17:41:23 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 68ms (Views: 10.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 17:42:03 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 34ms (Views: 9.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 17:42:21 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 41ms (Views: 9.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 17:45:32 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 68ms (Views: 43.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:14:11 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.7ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 34ms (Views: 10.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:14:24 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 34ms (Views: 9.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:14:34 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 35ms (Views: 9.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:15:21 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 34ms (Views: 9.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:15:58 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 70ms (Views: 9.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:16:52 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 34ms (Views: 9.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:17:50 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.6ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 35ms (Views: 9.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:18:12 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 80ms (Views: 13.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:20:35 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 32ms (Views: 9.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:33:12 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 36ms (Views: 11.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:38:55 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 68ms (Views: 44.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:39:09 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 36ms (Views: 10.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:39:19 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.6ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 74ms (Views: 10.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:40:07 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 34ms (Views: 9.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:40:41 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 37ms (Views: 9.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:41:35 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 72ms (Views: 11.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:42:38 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.6ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 39ms (Views: 10.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:43:04 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 37ms (Views: 10.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:43:18 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 41ms (Views: 11.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:56:49 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 36ms (Views: 9.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 18:56:57 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 69ms (Views: 10.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 19:01:33 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 58ms (Views: 27.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 19:01:48 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.6ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 37ms (Views: 12.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:04:15 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 81ms (Views: 19.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:04:26 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.7ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 38ms (Views: 12.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:04:46 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 34ms (Views: 9.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:05:54 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 74ms (Views: 12.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:06:04 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 34ms (Views: 9.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:06:09 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.7ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 75ms (Views: 9.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:06:20 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 34ms (Views: 9.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:06:26 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 34ms (Views: 9.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:07:00 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 2)[0m
+Rendered kit/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 75ms (Views: 12.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:07:19 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 2)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 37ms (Views: 9.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:12:23 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 45ms (Views: 11.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:15:31 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 33ms (Views: 9.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:15:48 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 35ms (Views: 12.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:16:18 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 75ms (Views: 9.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:17:05 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 34ms (Views: 9.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:17:57 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 34ms (Views: 9.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:18:05 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 69ms (Views: 10.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:18:11 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 32ms (Views: 9.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:18:31 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 34ms (Views: 9.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:18:42 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.7ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 34ms (Views: 9.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:18:50 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 33ms (Views: 9.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:19:00 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 85ms (Views: 9.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:20:28 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 32ms (Views: 9.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:20:50 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 33ms (Views: 10.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:20:52 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 33ms (Views: 9.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:21:01 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 34ms (Views: 10.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:21:27 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 71ms (Views: 10.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:21:35 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 35ms (Views: 11.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:21:57 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 34ms (Views: 10.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:23:08 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 34ms (Views: 9.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:24:08 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 34ms (Views: 9.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:24:59 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 71ms (Views: 9.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:25:18 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 33ms (Views: 10.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:25:23 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 34ms (Views: 10.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:26:56 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 71ms (Views: 10.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:34:37 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 35ms (Views: 9.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:34:58 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 34ms (Views: 9.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:35:21 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 32ms (Views: 9.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:38:50 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 33ms (Views: 9.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:41:32 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.7ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 71ms (Views: 9.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:42:17 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 34ms (Views: 10.7ms | ActiveRecord: 2.5ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:50:48 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 34ms (Views: 9.9ms | ActiveRecord: 2.4ms)

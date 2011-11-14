@@ -1,0 +1,32 @@
+package_assets: on
+
+javascripts:
+    all:
+        - public/javascripts/vendor/jquery.min.js
+        - public/javascripts/vendor/mustache.js
+        - public/javascripts/k-core.js
+        - public/javascripts/k-util.js
+        - public/javascripts/k-data.js
+        - public/javascripts/k-manager.js
+        - public/javascripts/k-component.js
+    
+    newkit:
+        - public/javascripts/k-newkit.js
+    
+    kit:
+        - public/javascripts/k-kittitle.js
+        - public/javascripts/k-newitem.js
+        - public/javascripts/k-kit.js
+
+stylesheets:
+    all:
+        - public/stylesheets/vendor/bootstrap.min.css
+        - public/stylesheets/k-core.css
+        - public/stylesheets/k-layout.css
+        - public/stylesheets/k-typography.css
+        
+    home:
+        - public/stylesheets/k-home.css
+        
+    kit:
+        - public/stylesheets/k-kit.css

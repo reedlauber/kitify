@@ -1,0 +1,11 @@
+default: &DEFAULT
+  adapter: postgresql
+  encoding: utf8
+  min_messages: warning
+  database: kitify_dev
+development:
+  <<: *DEFAULT
+  database: kitify_dev
+test:
+  <<: *DEFAULT
+  database: kitify_test

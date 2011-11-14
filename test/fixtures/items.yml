@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  kit_id: 1
+  name: MyString
+  quantity: 1
+  merchant_url: MyString
+  price: 
+  notes: MyText
+
+two:
+  kit_id: 1
+  name: MyString
+  quantity: 1
+  merchant_url: MyString
+  price: 
+  notes: MyText

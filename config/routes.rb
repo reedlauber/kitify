@@ -1,0 +1,8 @@
+Kitify::Application.routes.draw do
+  root :to => "home#index"
+  
+  get "/new" => "kit#new"
+  post "/new" => "kit#create"
+  
+  get "/:slug(/:token)" => "kit#index"
+end
