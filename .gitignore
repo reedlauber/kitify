@@ -2,3 +2,7 @@
 tmp/pids/server.pid
 
 public/javascripts/.DS_Store
+
+log/development.log
+
+log/test.log

@@ -1,8 +1,14 @@
 class KitController < ApplicationController
   def index
-    @kit = Kit.where("slug = ?", params[:slug]).first
+    @kit = Kit.where("slug = ?", params[:slug].downcase).first
     
-    @items = Item.where("kit_id = ?", @kit.id)
+    if(@kit == nil)
+      render "notfound"
+    else
+      @editable = params[:token] != nil && params[:token] == @kit.token
+
+      @items = Item.where("kit_id = ?", @kit.id)
+    end
   end
   
   def new

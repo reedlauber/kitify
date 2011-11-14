@@ -25,6 +25,7 @@ class Kit < ActiveRecord::Base
     slug = slug.gsub(/[\s]/, '-')
     limit = 255 - (self.id.to_s.length + 1)
     slug = slug[0, limit]
+    slug.downcase!
     
     self.slug = slug + '-' + self.id.to_s
     self.save

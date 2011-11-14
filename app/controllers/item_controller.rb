@@ -1,6 +1,6 @@
 class ItemController < ApplicationController
   def create
-    item
+    item = nil
     
     if(params[:id] != nil)
       item = Item.where("id = ?", params[:id])

@@ -5,4 +5,6 @@ Kitify::Application.routes.draw do
   post "/new" => "kit#create"
   
   get "/:slug(/:token)" => "kit#index"
+  
+  post "/items" => "item#create"
 end
