@@ -3669,3 +3669,361 @@ Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-13 21:50:48 -050
   [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
 Rendered kit/index.html.erb within layouts/application (7.1ms)
 Completed 200 OK in 34ms (Views: 9.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-14 07:48:02 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.7ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 31ms (Views: 7.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2011-11-14 07:48:02 -0500
+  Processing by KitController#index as CSS
+  Parameters: {"slug"=>"assets", "token"=>"all"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'assets') LIMIT 1[0m
+Completed 500 Internal Server Error in 16ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started GET "/assets/kit.css" for 127.0.0.1 at 2011-11-14 07:48:02 -0500
+  Processing by KitController#index as CSS
+  Parameters: {"slug"=>"assets", "token"=>"kit"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'assets') LIMIT 1
+Completed 500 Internal Server Error in 18ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/assets/all.js" for 127.0.0.1 at 2011-11-14 07:48:03 -0500
+  Processing by KitController#index as JS
+  Parameters: {"slug"=>"assets", "token"=>"all"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'assets') LIMIT 1[0m
+Completed 500 Internal Server Error in 18ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/assets/kit.js" for 127.0.0.1 at 2011-11-14 07:48:03 -0500
+  Processing by KitController#index as JS
+  Parameters: {"slug"=>"assets", "token"=>"kit"}
+  [1m[35mKit Load (0.4ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'assets') LIMIT 1
+Completed 500 Internal Server Error in 57ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-14 07:48:04 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 31ms (Views: 7.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2011-11-14 07:48:05 -0500
+  Processing by KitController#index as CSS
+  Parameters: {"slug"=>"assets", "token"=>"all"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'assets') LIMIT 1[0m
+Completed 500 Internal Server Error in 52ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/assets/kit.css" for 127.0.0.1 at 2011-11-14 07:48:05 -0500
+  Processing by KitController#index as CSS
+  Parameters: {"slug"=>"assets", "token"=>"kit"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'assets') LIMIT 1
+Completed 500 Internal Server Error in 17ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/assets/all.js" for 127.0.0.1 at 2011-11-14 07:48:05 -0500
+  Processing by KitController#index as JS
+  Parameters: {"slug"=>"assets", "token"=>"all"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'assets') LIMIT 1[0m
+Completed 500 Internal Server Error in 18ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (36.7ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.8ms)
+
+
+Started GET "/assets/kit.js" for 127.0.0.1 at 2011-11-14 07:48:05 -0500
+  Processing by KitController#index as JS
+  Parameters: {"slug"=>"assets", "token"=>"kit"}
+  [1m[35mKit Load (0.6ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'assets') LIMIT 1
+Completed 500 Internal Server Error in 16ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-14 07:48:06 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 2)
+Rendered kit/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 32ms (Views: 7.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2011-11-14 07:48:06 -0500
+  Processing by KitController#index as CSS
+  Parameters: {"slug"=>"assets", "token"=>"all"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'assets') LIMIT 1[0m
+Completed 500 Internal Server Error in 16ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/assets/kit.css" for 127.0.0.1 at 2011-11-14 07:48:06 -0500
+  Processing by KitController#index as CSS
+  Parameters: {"slug"=>"assets", "token"=>"kit"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'assets') LIMIT 1
+Completed 500 Internal Server Error in 20ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/assets/all.js" for 127.0.0.1 at 2011-11-14 07:48:06 -0500
+  Processing by KitController#index as JS
+  Parameters: {"slug"=>"assets", "token"=>"all"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'assets') LIMIT 1[0m
+Completed 500 Internal Server Error in 52ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/assets/kit.js" for 127.0.0.1 at 2011-11-14 07:48:06 -0500
+  Processing by KitController#index as JS
+  Parameters: {"slug"=>"assets", "token"=>"kit"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'assets') LIMIT 1
+Completed 500 Internal Server Error in 17ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (60.4ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TIME ZONE[0m
+  [1m[35mSQL (89.8ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (11.9ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (29.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (4.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'warning'
+  [1m[36mSQL (3.5ms)[0m  [1mSET search_path TO public[0m
+  [1m[35mSQL (51.7ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.3ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.3ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.2ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.7ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.1ms)[0m  [1mSHOW TIME ZONE[0m
+  [1m[35mSQL (5079.4ms)[0m  DROP DATABASE IF EXISTS "kitify_dev"
+PGError: ERROR:  database "kitify_dev" is being accessed by other users
+DETAIL:  There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "kitify_dev"
+
+
+Started GET "/my-first-kit-2/scZGsb3s" for 127.0.0.1 at 2011-11-14 07:49:39 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-2", "token"=>"scZGsb3s"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-2') LIMIT 1[0m
+Completed 500 Internal Server Error in 51ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/kit_controller.rb:5:in `index'
+
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /Users/reedlauber/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-14 07:49:48 -0500
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-14 07:49:54 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2011-11-14 07:50:05 -0500
+  Processing by KitController#create as HTML
+  Parameters: {"title"=>"Something Awesome"}
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM "kits" WHERE (token = 'p9cYuyPt')[0m
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (1.9ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"kits"'::regclass
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "kits" ("title", "token", "slug", "created_at", "updated_at") VALUES ('Something Awesome', 'p9cYuyPt', NULL, '2011-11-14 12:50:05.249732', '2011-11-14 12:50:05.249732') RETURNING "id"[0m
+  [1m[35mSQL (1.2ms)[0m  COMMIT
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "kits" SET "slug" = 'Something-Awesome-980190963', "updated_at" = '2011-11-14 12:50:05.256512' WHERE "kits"."id" = 980190963
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/Something-Awesome-980190963/p9cYuyPt
+Completed 302 Found in 26ms
+
+
+Started GET "/Something-Awesome-980190963/p9cYuyPt" for 127.0.0.1 at 2011-11-14 07:50:05 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"Something-Awesome-980190963", "token"=>"p9cYuyPt"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'Something-Awesome-980190963') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 33ms (Views: 10.2ms | ActiveRecord: 3.1ms)

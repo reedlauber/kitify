@@ -1,0 +1,1 @@
+(function(a){a.NewKit=function(c){var b=a.Component({id:"newkit"},c);b.oninit=function(){var d=$("#title","#"+b.options.id);$("#"+b.options.id+"-btn").click(function(){if(!d.val()){d.addClass("error");return false}})};return b.pub}})(Kitify);
