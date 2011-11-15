@@ -1,8 +1,3 @@
-
 tmp/pids/server.pid
-
-public/javascripts/.DS_Store
-
-log/development.log
-
-log/test.log
+*.DS_Store
+*.log
