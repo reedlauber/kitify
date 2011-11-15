@@ -12,7 +12,7 @@ class ItemController < ApplicationController
     item.name = params[:name]
     item.quantity = params[:quantity].to_i
     item.merchant_url = params[:merchant_url]
-    item.price = params[:price].to_d
+    item.price = params[:price].to_f
     item.notes = params[:notes]
     
     item.save

@@ -19,6 +19,7 @@
 	
 	.k-kit-items td { font-size:0.9em; }
 	td.k-kit-items-name { font-weight:bold;font-size:1.1em;color:#555; }
+	.k-kit-items-url { max-width:214px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
 
 	.k-kit-items-anchor { position:relative; }
 		.k-kit-ctrls { display:none;position:absolute;top:-11px;left:100%;margin-left:6px;padding:0 8px;height:37px;line-height:34px;background-color:#f5f5f5;border:1px solid #ddd;border-left:0;white-space:nowrap; }

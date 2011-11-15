@@ -17,7 +17,7 @@
 		<h4>Add Item</h4>
 		<div class="row">
 			<div class="span3"><input id="newitem-name" type="text" class="span3" placeholder="Product Name" /></div>
-			<div class="span1"><input id="newitem-quantity" type="text" class="span1" value="1" placeholder="1" /></div>
+			<div class="span1"><input id="newitem-quantity" type="text" class="span1" value="1" placeholder="Qty" /></div>
 			<div class="span4"><input id="newitem-merchanturl" type="text" class="span4" placeholder="Merchant URL" /></div>
 			<div class="span2"><input id="newitem-price" type="text" class="span2" placeholder="Price" /></div>
 			<div class="span4"><input id="newitem-notes" type="text" class="span4" placeholder="Notes" /></div>
@@ -42,7 +42,7 @@
 			<tr data-id="<%=item.id %>">
 				<td class="k-kit-items-name"><%=item.name %></td>
 				<td><%=item.quantity %></td>
-				<td><%=item.merchant_url %></td>
+				<td class="k-kit-items-url"><a href="<%=item.merchant_url %>" target="_blank"><%=item.merchant_url %></a></td>
 				<td><%=number_to_currency(item.price) %></td>
 				<td><div class="k-kit-items-anchor"><%=item.notes %></div></td>
 			</tr>
