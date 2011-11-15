@@ -2,10 +2,10 @@
 	<%= include_stylesheets :all, :kit, :media => "all" %>
 <% end %>
 
-<div id="kit" class="k-kit" data-id="<%=@kit.id %>">
+<div id="kit" class="k-kit<%=(' editable' if @editable) %>" data-id="<%=@kit.id %>">
 	<div class="k-kit-title">
-		<div class="k-kit-title-label" data-val="">
-			<h2><%=@kit.title %></h2>
+		<div class="k-kit-title-label" data-val="<%=@kit.title %>">
+			<h1><%=@kit.title %></h1>
 		</div>
 		<div class="k-kit-title-input">
 			<input type="text" id="kit-title" value="<%=@kit.title %>" class="span5">
@@ -17,7 +17,7 @@
 		<h4>Add Item</h4>
 		<div class="row">
 			<div class="span3"><input id="newitem-name" type="text" class="span3" placeholder="Product Name" /></div>
-			<div class="span1"><input id="newitem-quantity" type="text" class="span1" value="1" /></div>
+			<div class="span1"><input id="newitem-quantity" type="text" class="span1" value="1" placeholder="1" /></div>
 			<div class="span4"><input id="newitem-merchanturl" type="text" class="span4" placeholder="Merchant URL" /></div>
 			<div class="span2"><input id="newitem-price" type="text" class="span2" placeholder="Price" /></div>
 			<div class="span4"><input id="newitem-notes" type="text" class="span4" placeholder="Notes" /></div>
@@ -29,27 +29,35 @@
 	<table id="kit-items" class="k-kit-items bordered-table zebra-striped">
 		<thead>
 			<tr>
-				<th>Product Name</th>
-				<th>Quality</th>
-				<th>Merchant Link</th>
-				<th>Price</th>
-				<th>Notes</th>
+				<th class="k-kit-items-col1">Product Name</th>
+				<th class="k-kit-items-col2">Quality</th>
+				<th class="k-kit-items-col3">Merchant Link</th>
+				<th class="k-kit-items-col4">Price</th>
+				<th class="k-kit-items-col5">Notes</th>
 			</tr>
 		</thead>
 		<tbody>
 			<% if(@items.count > 0) %>
 				<% @items.each do |item| %>
-			<tr>
-				<td><%=item.name %></td>
+			<tr data-id="<%=item.id %>">
+				<td class="k-kit-items-name"><%=item.name %></td>
 				<td><%=item.quantity %></td>
 				<td><%=item.merchant_url %></td>
-				<td><%=item.price %></td>
-				<td><%=item.notes %></td>
+				<td><%=number_to_currency(item.price) %></td>
+				<td><div class="k-kit-items-anchor"><%=item.notes %></div></td>
 			</tr>
 				<% end %>
+			<% else %>
+			<tr class="k-kit-items-none">
+				<td colspan="5">Start adding items above.</td>
+			</tr>
 			<% end %>
 		</tbody>
 	</table>
+</div>
+<div class="k-kit-ctrls k-corner-right">
+	<a href="javascript:void(0)" class="k-kit-ctrls-edit btn small">edit</a>
+	<a href="javascript:void(0)" class="k-kit-ctrls-delete btn small danger">del</a>
 </div>
 
 <% content_for :js do %>
@@ -58,9 +66,13 @@
 		$(function() {
 			Kitify.Manager({
 				components: {
-					kitTitle: Kitify.KitTitle(),
-					newItem: Kitify.NewItem(),
-					kit: Kitify.Kit()
+					kit: Kitify.Kit({
+						components: {
+							kitTitle: Kitify.KitTitle(),
+							newItem: Kitify.NewItem(),
+							editItem: Kitify.EditItem()
+						}
+					})
 				}
 			}).init();
 		});

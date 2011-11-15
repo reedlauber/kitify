@@ -19,4 +19,15 @@ class ItemController < ApplicationController
     
     render :json => item
   end
+  
+  def destroy
+    item = Item.find(params[:id])
+    
+    if(item != nil)
+      item.delete
+      render :json => { :success => true, :id => item.id }
+    else
+      render :json => { :success => false, :message => "Item not found." }
+    end
+  end
 end

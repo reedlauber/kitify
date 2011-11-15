@@ -14,8 +14,9 @@ javascripts:
         - public/javascripts/k-newkit.js
     
     kit:
-        - public/javascripts/k-kittitle.js
-        - public/javascripts/k-newitem.js
+        - public/javascripts/k-kit-title.js
+        - public/javascripts/k-kit-newitem.js
+        - public/javascripts/k-kit-edititem.js
         - public/javascripts/k-kit.js
 
 stylesheets:

@@ -7,4 +7,5 @@ Kitify::Application.routes.draw do
   get "/:slug(/:token)" => "kit#index"
   
   post "/items" => "item#create"
+  delete "/items/:id" => "item#destroy"
 end

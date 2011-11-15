@@ -28,7 +28,7 @@
 			$labelOuter = $('.k-kit-title-label');
 			$inputOuter = $('.k-kit-title-input');
 			
-			$label = $('.k-kit-title-label h2');
+			$label = $('.k-kit-title-label h1');
 			$input = $('input', $inputOuter);
 			
 			_setupEvents();

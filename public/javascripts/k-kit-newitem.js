@@ -11,6 +11,12 @@
 			]
 		}, options);
 		
+		function _resetForm() {
+			$.each(_c.options.fields, function(i, field) {
+				$('#' + field.id).val('');
+			});
+		}
+		
 		_c.oninit = function() {
 			var kitId = $('#kit').attr('data-id');
 			
@@ -30,6 +36,7 @@
 				
 				if(valid) {
 					K.Data.save('/items', item, function(resp) {
+						_resetForm();
 						$(K).trigger('item-added', [resp]);
 					});
 				}

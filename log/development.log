@@ -4799,3 +4799,1960 @@ DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3
 PGError: ERROR:  database "kitify_dev" is being accessed by other users
 DETAIL:  There are 1 other session(s) using the database.
 : DROP DATABASE IF EXISTS "kitify_dev"
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+
+
+Started GET "/something-else-awesome-980190964/STcrcBKR" for 127.0.0.1 at 2011-11-14 22:18:09 -0500
+  [1m[36mSQL (0.3ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (13.2ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (61.4ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TIME ZONE[0m
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"something-else-awesome-980190964", "token"=>"STcrcBKR"}
+  [1m[35mKit Load (272.4ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'something-else-awesome-980190964') LIMIT 1
+Rendered kit/notfound.html.erb within layouts/application (1713.9ms)
+Completed 200 OK in 2363ms (Views: 1799.4ms | ActiveRecord: 347.9ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2011-11-14 22:18:22 -0500
+  Processing by KitController#new as HTML
+Rendered kit/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 95ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2011-11-14 22:18:35 -0500
+  Processing by KitController#create as HTML
+  Parameters: {"title"=>"my first kit"}
+  [1m[36mSQL (98.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (27.6ms)[0m  SELECT COUNT(*) FROM "kits" WHERE (token = 'AT4B2AHh')
+  [1m[36mSQL (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (70.6ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (101.6ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"kits"'::regclass
+  [1m[36mSQL (25.2ms)[0m  [1mINSERT INTO "kits" ("title", "token", "slug", "created_at", "updated_at") VALUES ('my first kit', 'AT4B2AHh', NULL, '2011-11-15 03:18:35.260051', '2011-11-15 03:18:35.260051') RETURNING "id"[0m
+  [1m[35mSQL (40.7ms)[0m  COMMIT
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.7ms)[0m  UPDATE "kits" SET "slug" = 'my-first-kit-980190963', "updated_at" = '2011-11-15 03:18:35.599631' WHERE "kits"."id" = 980190963
+  [1m[36mSQL (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/my-first-kit-980190963/AT4B2AHh
+Completed 302 Found in 519ms
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 22:18:35 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.6ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (13.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (34.5ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 177ms (Views: 41.4ms | ActiveRecord: 416.1ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 22:28:29 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 45ms (Views: 22.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 22:31:29 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 88ms (Views: 32.8ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2011-11-14 22:32:00 -0500
+  Processing by ItemController#create as JSON
+  Parameters: {"kit_id"=>"980190963", "name"=>"foo bar", "quantity"=>"2", "merchant_url"=>"http://www.amazon.com", "price"=>"22.99", "notes"=>"some notes..."}
+  [1m[35mSQL (1.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (2.0ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"items"'::regclass
+[0m
+  [1m[35mSQL (42.6ms)[0m  INSERT INTO "items" ("kit_id", "name", "quantity", "merchant_url", "price", "notes", "created_at", "updated_at") VALUES (980190963, 'foo bar', 2, 'http://www.amazon.com', 22.99, 'some notes...', '2011-11-15 03:32:00.693851', '2011-11-15 03:32:00.693851') RETURNING "id"
+  [1m[36mSQL (21.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 94ms (Views: 6.1ms | ActiveRecord: 68.1ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 22:34:56 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 76ms (Views: 16.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 22:39:33 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 41ms (Views: 16.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 22:43:55 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.4ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 42ms (Views: 15.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:00:08 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 49ms (Views: 19.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:00:22 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.6ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 79ms (Views: 18.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:00:34 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 41ms (Views: 16.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:03:16 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.7ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 60ms (Views: 30.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:03:52 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 40ms (Views: 16.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:05:06 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 80ms (Views: 16.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:06:38 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 41ms (Views: 15.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:08:12 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 39ms (Views: 15.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:08:23 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 42ms (Views: 16.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:08:37 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 76ms (Views: 16.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:08:42 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 39ms (Views: 16.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:09:05 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.4ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 43ms (Views: 18.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:10:49 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 42ms (Views: 16.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:11:06 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 76ms (Views: 17.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:11:24 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 39ms (Views: 15.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:13:51 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.7ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 40ms (Views: 16.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:14:01 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 77ms (Views: 16.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:14:23 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 77ms (Views: 53.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:14:43 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 42ms (Views: 16.0ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2011-11-14 23:15:07 -0500
+  Processing by ItemController#create as JSON
+  Parameters: {"kit_id"=>"980190963", "name"=>"item 2", "quantity"=>"4", "merchant_url"=>"http://newegg.com", "price"=>"14.95", "notes"=>"more notes..."}
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (2.6ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"items"'::regclass
+[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("kit_id", "name", "quantity", "merchant_url", "price", "notes", "created_at", "updated_at") VALUES (980190963, 'item 2', 4, 'http://newegg.com', 14.95, 'more notes...', '2011-11-15 04:15:07.227361', '2011-11-15 04:15:07.227361') RETURNING "id"
+  [1m[36mSQL (70.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 103ms (Views: 3.7ms | ActiveRecord: 75.2ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:15:17 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 40ms (Views: 15.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:16:28 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 41ms (Views: 15.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:16:37 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 85ms (Views: 16.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:16:42 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 91ms (Views: 64.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:16:46 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 43ms (Views: 15.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:16:51 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.7ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 41ms (Views: 16.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:18:00 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.6ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 77ms (Views: 15.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:19:31 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 74ms (Views: 51.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:21:30 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 39ms (Views: 15.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:21:43 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 39ms (Views: 16.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:22:06 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 77ms (Views: 16.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:23:33 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (50.8ms)
+Completed 200 OK in 76ms (Views: 53.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:23:47 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.4ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 41ms (Views: 16.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:24:31 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (1.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (2.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 50ms (Views: 18.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:24:47 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 76ms (Views: 16.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:25:15 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 40ms (Views: 15.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:26:23 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 46ms (Views: 20.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:26:51 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 44ms (Views: 17.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:27:46 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 74ms (Views: 16.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:27:55 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.7ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 40ms (Views: 16.4ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2011-11-14 23:29:48 -0500
+  Processing by ItemController#create as JSON
+  Parameters: {"kit_id"=>"980190963", "name"=>"item 3", "quantity"=>"1", "merchant_url"=>"http://google.com", "price"=>"10", "notes"=>"...."}
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (1.9ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"items"'::regclass
+[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("kit_id", "name", "quantity", "merchant_url", "price", "notes", "created_at", "updated_at") VALUES (980190963, 'item 3', 1, 'http://google.com', 10.0, '....', '2011-11-15 04:29:48.555613', '2011-11-15 04:29:48.555613') RETURNING "id"
+  [1m[36mSQL (2.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 33ms (Views: 3.5ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:31:39 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 84ms (Views: 53.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:32:21 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 39ms (Views: 15.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:32:29 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 41ms (Views: 15.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:34:13 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (234.4ms)
+Completed 200 OK in 295ms (Views: 236.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:35:09 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (50.9ms)
+Completed 200 OK in 77ms (Views: 53.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-14 23:35:18 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 39ms (Views: 15.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 07:56:52 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.6ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 72ms (Views: 30.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:08:22 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.4ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 42ms (Views: 17.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:09:34 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.7ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 77ms (Views: 17.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:10:21 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 41ms (Views: 16.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:10:44 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 41ms (Views: 16.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:11:02 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 47ms (Views: 20.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh2" for 127.0.0.1 at 2011-11-15 08:11:05 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh2"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (50.1ms)
+Completed 200 OK in 76ms (Views: 52.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:12:08 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 45ms (Views: 21.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:19:43 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 61ms (Views: 29.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:22:33 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 50ms (Views: 20.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:22:59 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.4ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 75ms (Views: 17.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:23:11 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 41ms (Views: 16.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:23:27 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.6ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 41ms (Views: 17.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:24:27 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 82ms (Views: 16.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:24:59 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (51.6ms)
+Completed 200 OK in 79ms (Views: 54.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:25:39 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.6ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 42ms (Views: 17.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:25:53 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 41ms (Views: 16.6ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2011-11-15 08:26:22 -0500
+  Processing by ItemController#create as JSON
+  Parameters: {"kit_id"=>"980190963", "name"=>"item 4", "quantity"=>"1", "merchant_url"=>"http://amazon.com", "price"=>"12.21", "notes"=>"..."}
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (2.7ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"items"'::regclass
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("kit_id", "name", "quantity", "merchant_url", "price", "notes", "created_at", "updated_at") VALUES (980190963, 'item 4', 1, 'http://amazon.com', 12.21, '...', '2011-11-15 13:26:22.720133', '2011-11-15 13:26:22.720133') RETURNING "id"[0m
+  [1m[35mSQL (71.1ms)[0m  COMMIT
+Completed 200 OK in 148ms (Views: 5.7ms | ActiveRecord: 76.0ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:28:42 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 41ms (Views: 16.9ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2011-11-15 08:29:10 -0500
+  Processing by ItemController#create as JSON
+  Parameters: {"kit_id"=>"980190963", "name"=>"item 5", "quantity"=>"6", "merchant_url"=>"http://radioshack.com", "price"=>"6.99", "notes"=>"..."}
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (2.8ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"items"'::regclass
+[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("kit_id", "name", "quantity", "merchant_url", "price", "notes", "created_at", "updated_at") VALUES (980190963, 'item 5', 6, 'http://radioshack.com', 6.99, '...', '2011-11-15 13:29:10.996798', '2011-11-15 13:29:10.996798') RETURNING "id"
+  [1m[36mSQL (1.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 29ms (Views: 3.5ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:42:55 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[35mKit Load (0.5ms)[0m  SELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE (kit_id = 980190963)
+Rendered kit/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 43ms (Views: 18.9ms | ActiveRecord: 2.8ms)
+
+
+Started DELETE "/items/980190967" for 127.0.0.1 at 2011-11-15 08:42:58 -0500
+  Processing by ItemController#destroy as JSON
+  Parameters: {"id"=>"980190967"}
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 980190967 LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mAREL (1.5ms)[0m  DELETE FROM "items" WHERE "items"."id" = 980190967
+Completed 200 OK in 190ms (Views: 4.3ms | ActiveRecord: 3.3ms)
+
+
+Started DELETE "/items/980190966" for 127.0.0.1 at 2011-11-15 08:43:10 -0500
+  Processing by ItemController#destroy as JSON
+  Parameters: {"id"=>"980190966"}
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 980190966 LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mAREL (2.5ms)[0m  DELETE FROM "items" WHERE "items"."id" = 980190966
+Completed 200 OK in 31ms (Views: 3.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/my-first-kit-980190963/AT4B2AHh" for 127.0.0.1 at 2011-11-15 08:43:15 -0500
+  Processing by KitController#index as HTML
+  Parameters: {"slug"=>"my-first-kit-980190963", "token"=>"AT4B2AHh"}
+  [1m[36mKit Load (0.5ms)[0m  [1mSELECT "kits".* FROM "kits" WHERE (slug = 'my-first-kit-980190963') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"kits"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"items"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "items" WHERE (kit_id = 980190963)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE (kit_id = 980190963)[0m
+Rendered kit/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 41ms (Views: 16.6ms | ActiveRecord: 2.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/reedlauber/Sites/kitify/config/environment.rb:5)
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (2.2ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.2ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.2ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.2ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (61.4ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TIME ZONE[0m
+  [1m[35mSQL (158.8ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (4.1ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (52.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (29.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'warning'
+  [1m[36mSQL (50.9ms)[0m  [1mSET search_path TO public[0m
+  [1m[35mSQL (16.3ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.2ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'warning'[0m
+  [1m[35mSQL (0.6ms)[0m  SET time zone 'UTC'
+  [1m[36mSQL (0.1ms)[0m  [1mSHOW TIME ZONE[0m
+  [1m[35mSQL (5023.1ms)[0m  DROP DATABASE IF EXISTS "kitify_dev"
+PGError: ERROR:  database "kitify_dev" is being accessed by other users
+DETAIL:  There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "kitify_dev"
