@@ -9,15 +9,16 @@ javascripts:
         - public/javascripts/k-data.js
         - public/javascripts/k-manager.js
         - public/javascripts/k-component.js
+        - public/javascripts/k-form.js
     
     newkit:
-        - public/javascripts/k-newkit.js
+        - public/javascripts/components/k-newkit.js
     
     kit:
-        - public/javascripts/k-kit-title.js
-        - public/javascripts/k-kit-newitem.js
-        - public/javascripts/k-kit-edititem.js
-        - public/javascripts/k-kit.js
+        - public/javascripts/components/k-kit-title.js
+        - public/javascripts/components/k-kit-newitem.js
+        - public/javascripts/components/k-kit-edititem.js
+        - public/javascripts/components/k-kit.js
 
 stylesheets:
     all:

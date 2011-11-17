@@ -1,3 +1,5 @@
 tmp/pids/server.pid
 *.DS_Store
 *.log
+
+log/development.log

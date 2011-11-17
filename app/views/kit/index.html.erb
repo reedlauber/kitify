@@ -16,11 +16,15 @@
 	<div id="newitem" class="k-kit-add">
 		<h4>Add Item</h4>
 		<div class="row">
-			<div class="span3"><input id="newitem-name" type="text" class="span3" placeholder="Product Name" /></div>
-			<div class="span1"><input id="newitem-quantity" type="text" class="span1" value="1" placeholder="Qty" /></div>
-			<div class="span4"><input id="newitem-merchanturl" type="text" class="span4" placeholder="Merchant URL" /></div>
-			<div class="span2"><input id="newitem-price" type="text" class="span2" placeholder="Price" /></div>
-			<div class="span4"><input id="newitem-notes" type="text" class="span4" placeholder="Notes" /></div>
+			<div class="span3"><input id="newitem-name" type="text" class="k-field span3" placeholder="Product Name" required /></div>
+			<div class="span1"><input id="newitem-quantity" type="number" class="k-field span1" value="1" placeholder="Qty" required /></div>
+			<div class="span4"><input id="newitem-merchanturl" type="url" class="k-field span4" placeholder="Merchant URL" required /></div>
+			<div class="span2 input">
+				<div class="input-prepend">
+				<span class="add-on">$</span><input id="newitem-price" type="number" class="k-field span2" placeholder="Price" required />
+				</div>
+			</div>
+			<div class="span4"><input id="newitem-notes" type="text" class="k-field span4" placeholder="Notes" /></div>
 		</div>
 		<a id="kit-add-btn" href="javascript:void(0)" class="btn small">Add Item</a>
 	</div>
