@@ -34,7 +34,6 @@ table input.span4 { width:204px; }
 input.error:-moz-placeholder { color:#bbb; }
 input.error::-webkit-input-placeholder { color:#bbb; }
 
-html, body { background-color:#777; }
 
 #content { background-color:#eaeaea;border:1px solid #333; }
 

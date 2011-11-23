@@ -1,7 +1,8 @@
 .k-validation-msgs { position:fixed;top:40px;right:0;left:0;width:640px;margin:0 auto; }
 	.k-validation-msgs .alert-message { margin-bottom:0;border-radius:0; }
 
-html { height:100%; }
+html { height:100%;background:#777 url(../images/graphy.png); }
+body { background-color:transparent; }
 
 #content { margin-top:60px; }
 
