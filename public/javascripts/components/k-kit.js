@@ -1,9 +1,11 @@
 (function(K) {
 	K.Kit = function(options) {
-		var _c = K.Component({ id:'kit', components:{} }, options);
+		var _c = K.Component({ id:'kit', components:{} }, options),
+			_items = [];
 		
 		var $table;
 		
+		var _noItemsTmpl = '<tr class="k-kit-items-none"><td colspan="5">Start adding items above.</td></tr>';
 		var _itemTmpl = ['<tr data-id="{{id}}">',
 							 '<td class="k-kit-items-name">{{name}}</td>',
 							 '<td>{{quantity}}</td>',
@@ -21,7 +23,33 @@
 			return formatted;
 		}
 		
+		function _appendRow($target, item) {
+			var formatted = _formatItem(item),
+				row = K.template(_itemTmpl, formatted);
+			$(row).appendTo($target).data('item', item);
+		}
+		
+		function _updateRow($row, item) {
+			var formatted = _formatItem(item),
+				row = K.template(_itemTmpl, formatted);
+			$row.replaceWith($(row).data('item', item));
+		}
+		
+		function _renderItems() {
+			var $tbody = $('tbody', $table).empty();
+			if(!_items.length) {
+				$('tbody', $table).append(_noItemsTmpl);
+			} else {
+				$.each(_items, function(i, item) {
+					item.price = parseFloat(item.price);
+					_appendRow($tbody, item);
+				});
+			}
+		}
+		
 		_c.oninit = function() {
+			_c.pub.slug = $('#' + _c.options.id).attr('data-id');
+			
 			$table = $('#' + _c.options.id + '-items');
 			
 			if($('#' + _c.options.id).hasClass('editable')) {
@@ -30,12 +58,24 @@
 				});
 			}
 			
-			$(K).bind('item-added', function(evt, item) {
+			K.Data.get('/' + _c.pub.slug + '/items', function(resp) {
+				_items = resp;
+				_renderItems();
+			});
+			
+			$(K).bind('item-created', function(evt, item) {
 				$('.k-kit-items-none', $table).remove();
-				
-				var formatted = _formatItem(item);
-				var row = K.template(_itemTmpl, formatted);
-				$('tbody', $table).append(row);
+				_appendRow($('tbody', $table), item);
+			});
+			
+			$(K).bind('item-updated', function(evt, item, $row) {
+				_updateRow($row, item);
+			});
+			
+			$(K).bind('item-deleted', function(evt, id) {
+				if(!$('tbody tr', $table).length) {
+					$('tbody', $table).append(_noItemsTmpl);
+				}
 			});
 		};
 		

@@ -2,7 +2,7 @@
 	<%= include_stylesheets :all, :kit, :media => "all" %>
 <% end %>
 
-<div id="kit" class="k-kit<%=(' editable' if @editable) %>" data-id="<%=@kit.id %>">
+<div id="kit" class="k-kit<%=(' editable' if @editable) %>" data-id="<%=@kit.slug %>">
 	<div class="k-kit-title">
 		<div class="k-kit-title-label" data-val="<%=@kit.title %>">
 			<h1><%=@kit.title %></h1>
@@ -41,25 +41,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<% if(@items.count > 0) %>
-				<% @items.each do |item| %>
-			<tr data-id="<%=item.id %>">
-				<td class="k-kit-items-name"><%=item.name %></td>
-				<td><%=item.quantity %></td>
-				<td class="k-kit-items-url"><a href="<%=item.merchant_url %>" target="_blank"><%=item.merchant_url %></a></td>
-				<td><%=number_to_currency(item.price) %></td>
-				<td><div class="k-kit-items-anchor"><%=item.notes %></div></td>
-			</tr>
-				<% end %>
-			<% else %>
-			<tr class="k-kit-items-none">
-				<td colspan="5">Start adding items above.</td>
-			</tr>
-			<% end %>
+			<tr><td colspan="5">Getting items...</td></tr>
 		</tbody>
 	</table>
 </div>
-<div class="k-kit-ctrls k-corner-right">
+<div id="kit-items-editctrls" class="k-kit-ctrls k-corner-right">
 	<a href="javascript:void(0)" class="k-kit-ctrls-edit btn small">edit</a>
 	<a href="javascript:void(0)" class="k-kit-ctrls-delete btn small danger">del</a>
 </div>

@@ -12,7 +12,13 @@
 		if(_f.validationMsgs.length) {
 			var $vm = $('<div class="k-validation-msgs k-shadow" />').hide().prependTo('#container');
 			var $inner = $('<div class="alert-message block-message error" />').appendTo($vm);
+			var timeout = setTimeout(function() {
+				$vm.slideUp('fast', function() {
+					_f.clearValidationMsgs();	
+				});
+			}, 4000);
 			var $close = $('<a href="javascript:void(0)" class="close">&times;</a>').appendTo($inner).click(function() {
+				clearTimeout(timeout);
 				_f.clearValidationMsgs();
 			});
 			var $list = $('<ul />').appendTo($inner);
@@ -27,23 +33,27 @@
 		return $field.val();
 	};
 	
-	_f.validate = function($fields) {
+	_f.validate = function(fields) {
 		var valid = true, requiredValid = true, data = {};
 		
 		_f.clearValidationMsgs();
 		
-		$fields.each(function() {
-			var $f = $(this).removeClass('error'),
+		$.each(fields, function(i, field) {
+			var $f = $('#' + field.id).removeClass('error'),
 				val = _f.getValue($f),
 				fieldValid = true;
 				
-			if($f.attr('required') && !val) {
+			if((field.required || $f.attr('required')) && !val) {
 				fieldValid = false;
 				requiredValid = false;
 			}
 			
+			if(fieldValid && field.prop) {
+				data[field.prop] = val;
+			}
+			
 			if(fieldValid && K.Form.validators[$f.attr('id')]) {
-				fieldValid = K.Form.validators[$f.attr('id')]($f, val);
+				fieldValid = K.Form.validators[$f.attr('id')](field, val, data);
 			}
 			
 			if(!fieldValid) {
@@ -78,6 +88,8 @@
 		var _self = {},
 			_options = $.extend({
 				context: 'body',
+				fields: [],
+				data: {},
 				btns: {}
 			}, options);
 		
@@ -85,12 +97,19 @@
 		
 		if(_options.btns.submit) {
 			$(_options.btns.submit).click(function() {
-				var data = _f.validate($fields);
+				var data = _f.validate(_options.fields);
+				data = $.extend(_options.data, data);
 				if(data) {
-					$(_self).trigger('form-submitted', [data]);
+					$(_self).trigger('submit', [data]);
 				}
 			});
 		}
+		
+		_self.reset = function() {
+			$.each(_options.fields, function(i, field) {
+				$('#' + field.id).val('');
+			});
+		};
 		
 		return _self;
 	};
