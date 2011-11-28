@@ -12,24 +12,23 @@ class ItemController < ApplicationController
   end
   
   def create
-    item = nil
+    kit = Kit.where("slug = ?", params[:slug].downcase).first
     
-    if(params[:id] != nil)
-      item = Item.where("id = ?", params[:id])
+    if(kit == nil)
+      render :json => { :success => false, :message => "Kit not found." }
     else
       item = Item.new
-      item.kit_id = params[:kit_id]
+      item.kit_id = kit.id
+      item.name = params[:name]
+      item.quantity = params[:quantity].to_i
+      item.merchant_url = params[:merchant_url]
+      item.price = params[:price].to_f
+      item.notes = params[:notes]
+
+      item.save
+
+      render :json => item
     end
-    
-    item.name = params[:name]
-    item.quantity = params[:quantity].to_i
-    item.merchant_url = params[:merchant_url]
-    item.price = params[:price].to_f
-    item.notes = params[:notes]
-    
-    item.save
-    
-    render :json => item
   end
   
   def update

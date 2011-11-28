@@ -49,7 +49,7 @@
 		};
 		
 		_c.oninit = function() {
-			var kitId = $('#kit').attr('data-id');
+			var kitSlug = $('#kit').attr('data-id');
 			
 			var form = K.Form.setup({
 				context: '#newitem',
@@ -60,7 +60,7 @@
 			});
 			
 			$(form).bind('submit', function(evt, item) {
-				item.kit_id = kitId;
+				item.slug = kitSlug;
 				
 				K.Data.save('/items', item, function(resp) {
 					form.reset();
