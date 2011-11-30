@@ -20,6 +20,7 @@
 			if(typeof item.price === 'number') {
 				formatted.price = '$' + item.price.toFixed(2);	
 			}
+			
 			return formatted;
 		}
 		

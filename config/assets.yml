@@ -9,6 +9,7 @@ javascripts:
         - public/javascripts/k-data.js
         - public/javascripts/k-manager.js
         - public/javascripts/k-component.js
+        - public/javascripts/k-validation.js
         - public/javascripts/k-form.js
     
     newkit:

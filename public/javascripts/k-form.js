@@ -1,59 +1,34 @@
 (function(K) {
-	var _f = {};
+	var _f = {},
+		_v = K.Validation;
 	
-	_f.validationMsgs = [];
-	
-	_f.clearValidationMsgs = function() {
-		_f.validationMsgs = [];
-		$('.k-validation-msgs').remove();
-	};
-	
-	_f.showValidationMsgs = function() {
-		if(_f.validationMsgs.length) {
-			var $vm = $('<div class="k-validation-msgs k-shadow" />').hide().prependTo('#container');
-			var $inner = $('<div class="alert-message block-message error" />').appendTo($vm);
-			var timeout = setTimeout(function() {
-				$vm.slideUp('fast', function() {
-					_f.clearValidationMsgs();	
-				});
-			}, 4000);
-			var $close = $('<a href="javascript:void(0)" class="close">&times;</a>').appendTo($inner).click(function() {
-				clearTimeout(timeout);
-				_f.clearValidationMsgs();
-			});
-			var $list = $('<ul />').appendTo($inner);
-			$.each(_f.validationMsgs, function(i, msg) {
-				$('<li />').html(msg).appendTo($list);
-			});
-			$vm.slideDown();
-		}
-	};
-	
-	_f.getValue = function($field) {
+	_f.getValue = function(field, $field) {
 		return $field.val();
 	};
 	
 	_f.validate = function(fields) {
 		var valid = true, requiredValid = true, data = {};
 		
-		_f.clearValidationMsgs();
+		_v.clearMsgs();
 		
 		$.each(fields, function(i, field) {
 			var $f = $('#' + field.id).removeClass('error'),
-				val = _f.getValue($f),
+				val = _f.getValue(field, $f),
 				fieldValid = true;
-				
-			if((field.required || $f.attr('required')) && !val) {
+			
+			if(!_v.validators.required(field, $f, val, data)) {
 				fieldValid = false;
 				requiredValid = false;
 			}
 			
+			var validator = _v.validators[field.validator || '_none'] || _v.validators[$f.attr('id')];
+			
+			if(validator) {
+				fieldValid = fieldValid && validator(field, $f, val, data);
+			}
+
 			if(fieldValid && field.prop) {
 				data[field.prop] = val;
-			}
-			
-			if(fieldValid && K.Form.validators[$f.attr('id')]) {
-				fieldValid = K.Form.validators[$f.attr('id')](field, val, data);
 			}
 			
 			if(!fieldValid) {
@@ -65,10 +40,10 @@
 		
 		if(!valid) {
 			if(!requiredValid) {
-				_f.validationMsgs.splice(0, 0, 'Please fill out all required fields.');
+				_v.prependMsg('Please fill out all required fields.');
 			}
 			
-			_f.showValidationMsgs();
+			_v.showMsgs();
 			
 			data = null;
 		}
@@ -76,13 +51,7 @@
 		return data;
 	};
 	
-	K.Form = {
-		validators: {}
-	};
-	
-	K.Form.addValidationMsg = function(msg) {
-		_f.validationMsgs.push(msg);
-	};
+	K.Form = {};
 	
 	K.Form.setup = function(options) {
 		var _self = {},
@@ -98,8 +67,8 @@
 		if(_options.btns.submit) {
 			$(_options.btns.submit).click(function() {
 				var data = _f.validate(_options.fields);
-				data = $.extend(_options.data, data);
 				if(data) {
+					data = $.extend(_options.data, data);
 					$(_self).trigger('submit', [data]);
 				}
 			});

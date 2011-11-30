@@ -38,9 +38,11 @@
 		function _setupEdit($row) {
 			var item = $row.data('item');
 			if(item) {
-				var editRow = K.template(_editTmpl, item);
-				var $editRow = $(K.template(_editTmpl, item)).insertAfter($row.hide());
-				var $ctrls = $('#kit-items-savectrls').show();
+				$row.hide();
+				$ctrls.detach();
+				var $editRow = $(K.template(_editTmpl, item)).insertAfter($row);
+				$('#kit-items-savectrls').show();
+				
 				var form = K.Form.setup({
 					context: $editRow,
 					fields: _c.options.fields,
@@ -52,12 +54,13 @@
 				$(form).bind('submit', function(evt, edited) {
 					K.Data.save('/items/' + edited.id, edited, function(resp) {
 						if(resp && resp.success !== false) {
+							resp.price = parseFloat(resp.price);
 							$editRow.remove();
 							$(K).trigger('item-updated', [resp, $row]);
 						}
 					});
 				});
-				$('.k-kit-ctrls-cancel', $ctrls).click(function() {
+				$('.k-kit-ctrls-cancel', $editRow).click(function() {
 					$row.show();
 					$editRow.remove();
 				});
