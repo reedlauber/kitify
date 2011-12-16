@@ -25,30 +25,27 @@
 								'</div>',
 							 '</td>',
 							 '<td>',
-								'<div class="k-kit-items-anchor">',
-									'<input type="text" id="item-notes" value="{{notes}}" class="span4" />',
-									'<div id="kit-items-savectrls" class="k-kit-ctrls k-corner-right">',
-										'<a href="javascript:void(0)" class="k-kit-ctrls-save btn small primary">save</a>',
-										'<a href="javascript:void(0)" class="k-kit-ctrls-cancel btn small">cancel</a>',
-									'</div>',
-								'</div',
+								'<input type="text" id="item-notes" value="{{notes}}" class="span2" />',
 							 '</td>',
+							'<td>',	
+								'<div class="k-kit-ctrls">',
+									'<a href="javascript:void(0)" class="k-kit-ctrls-save btn small primary">save</a>',
+									'<a href="javascript:void(0)" class="k-kit-ctrls-cancel btn small">cancel</a>',
+								'</div>',
+							'</td>',
 						 '</tr>'].join('');
 		
 		function _setupEdit($row) {
 			var item = $row.data('item');
 			if(item) {
-				$row.hide();
-				$ctrls.detach();
 				var $editRow = $(K.template(_editTmpl, item)).insertAfter($row);
-				$('#kit-items-savectrls').show();
 				
 				var form = K.Form.setup({
 					context: $editRow,
 					fields: _c.options.fields,
 					data: item,
 					btns: {
-						submit: '.k-kit-ctrls-save'
+						submit: $('.k-kit-ctrls-save', $editRow)
 					}
 				});
 				$(form).bind('submit', function(evt, edited) {
@@ -60,10 +57,6 @@
 						}
 					});
 				});
-				$('.k-kit-ctrls-cancel', $editRow).click(function() {
-					$row.show();
-					$editRow.remove();
-				});
 			}
 		}
 		
@@ -74,32 +67,40 @@
 			$(document).on('hover', '#kit-items tbody tr', function(evt) {
 				if(!$(this).hasClass('k-items-editrow')) {
 					if(evt.type === 'mouseenter') {
-						$ctrls.appendTo($('.k-kit-items-anchor', this)).show();	
+						$('.k-kit-ctrls', this).show();
 					} else {
-						$ctrls.hide();
+						$('.k-kit-ctrls', this).hide();
 					}
 				}
 			});
 			
-			$('.k-kit-ctrls-edit', $ctrls).click(function() {
-				var $row = $(this).parents('tr');
-				if($row.length) {
+			$('#kit-items tbody').click(function(evt) {
+				var $target = $(evt.target),
+					$row = $target.parents('tr');
+					
+				if($target.hasClass('k-kit-ctrls-cancel')) {
+					$('.k-items-editrow').remove();
+					$('.k-kit-item-editing').removeClass('k-kit-item-editing');
+				} else if($target.hasClass('k-kit-ctrls-edit')) {
+					// clear out any existing edit rows
+					$('.k-items-editrow').remove();
+					$('.k-kit-item-editing').removeClass('k-kit-item-editing');
+					
+					// hide display row
+					$row.addClass('k-kit-item-editing');
+					
+					// setup edit row
 					_setupEdit($row);
-				}
-			});
-			
-			$('.k-kit-ctrls-delete', $ctrls).click(function() {
-				$ctrls.hide();
-				var $row = $(this).parents('tr');
-				var id = $row.attr('data-id');
-				if(id) {
-					K.Data.del('/items/' + id, function(resp) {
-						$row.fadeOut(function() {
-							$ctrls.appendTo('#kit');
-							$row.remove();
-							$(K).trigger('item-deleted', [resp.id]);
+				} else if($target.hasClass('k-kit-ctrls-delete')) {
+					var id = $row.attr('data-id');
+					if(id) {
+						K.Data.del('/items/' + id, function(resp) {
+							$row.fadeOut(function() {
+								$row.remove();
+								$(K).trigger('item-deleted', [resp.id]);
+							});
 						});
-					});
+					}
 				}
 			});
 		};

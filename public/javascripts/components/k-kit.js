@@ -5,13 +5,19 @@
 		
 		var $table;
 		
-		var _noItemsTmpl = '<tr class="k-kit-items-none"><td colspan="5">Start adding items above.</td></tr>';
+		var _noItemsTmpl = '<tr class="k-kit-items-none"><td colspan="6">Start adding items above.</td></tr>';
 		var _itemTmpl = ['<tr data-id="{{id}}">',
 							 '<td class="k-kit-items-name">{{name}}</td>',
 							 '<td>{{quantity}}</td>',
 							 '<td class="k-kit-items-url"><a href="{{merchant_url}}" target="_blank">{{merchant_url}}</a></td>',
 							 '<td>{{price}}</td>',
-							 '<td><div class="k-kit-items-anchor">{{notes}}</div></td>',
+							 '<td>{{notes}}</td>',
+							 '<td>',
+								'<div class="k-kit-ctrls">',
+									'<a href="javascript:void(0)" class="k-kit-ctrls-edit btn small primary">edit</a>',
+									'<a href="javascript:void(0)" class="k-kit-ctrls-delete btn small danger">delete</a>',
+								'</div>',
+							 '</td>',
 						 '</tr>'].join('');
 		
 		function _formatItem(item) {
