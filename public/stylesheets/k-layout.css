@@ -1,8 +1,16 @@
+/* Validation Messages */
 .k-validation-msgs { position:fixed;top:40px;right:0;left:0;width:640px;margin:0 auto; }
 	.k-validation-msgs .alert-message { margin-bottom:0;border-radius:0; }
 
+/* Ajax Notice */
+.k-header-notice { display:none;position:absolute;top:0;right:0;height:40px;width:100px;padding:0 16px 0 32px;color:#f0f0f0;line-height:40px;background-color:rgba(200, 200, 200, 0.1);
+ 	-moz-box-shadow:inset 2px 0 2px rgba(0, 0, 0, 0.3);-webkit-box-shadow:inset 2px 0 2px rgba(0, 0, 0, 0.3);box-shadow:inset 2px 0 2px rgba(0, 0, 0, 0.3); }
+.k-header-notice-saving { background-image:url(../images/ajax-loader.gif);background-repeat:no-repeat;background-position:8px center; }
+
 html { height:100%;background:#777 url(../images/graphy.png); }
 body { background-color:transparent; }
+
+#header .container { position:relative; }
 
 #content { margin-top:60px; }
 

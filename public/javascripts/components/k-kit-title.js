@@ -7,6 +7,24 @@
 			$inputOuter,
 				$input;
 		
+		var _title = '';
+		
+		function _updateKitTitle(newTitle) {
+			var val = $input.val();
+			if(val && val != _title) {
+				_title = val;
+				$label.text(val);
+				$labelOuter.attr('data-val', val);
+				K.Data.save('/' + _c.manager.slug + '/' + _c.manager.token, { title:val }, function(resp) {
+					if(resp.success !== false){
+						window.location.href = '/' + resp.slug + '/' + resp.token;
+					}
+				});
+			}
+			$labelOuter.show();
+			$inputOuter.hide();
+		}
+		
 		function _setupEvents() {
 			$label.click(function() {
 				$labelOuter.hide();
@@ -14,13 +32,11 @@
 				$input.val($labelOuter.attr('data-val')).focus();
 			});
 			$input.blur(function() {
-				var val = $input.val();
-				if(val) {
-					$label.text(val);
-					$labelOuter.attr('data-val', val);
+				_updateKitTitle();
+			}).keyup(function(evt) {
+				if(evt.which === 13) {
+					_updateKitTitle();
 				}
-				$labelOuter.show();
-				$inputOuter.hide();
 			});
 		}
 		
@@ -30,6 +46,8 @@
 			
 			$label = $('.k-kit-title-label h1');
 			$input = $('input', $inputOuter);
+			
+			_title = $label.text();
 			
 			_setupEvents();
 		};

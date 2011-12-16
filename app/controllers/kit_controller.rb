@@ -28,4 +28,19 @@ class KitController < ApplicationController
       render "new"
     end
   end
+  
+  def update
+    kit = Kit.where("slug = ? AND token = ?", params[:slug].downcase, params[:token]).first
+    
+    if(kit == nil)
+      render :json => { :success => false, :message => "Could not find kit." }
+    else
+      if(params[:title] != nil && params[:title] != kit.title)
+        kit.title = params[:title]
+        kit.generate_slug
+      end
+      
+      render :json => kit
+    end
+  end
 end

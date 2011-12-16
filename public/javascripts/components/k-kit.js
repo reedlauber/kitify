@@ -50,6 +50,7 @@
 		
 		_c.oninit = function() {
 			_c.pub.slug = $('#' + _c.options.id).attr('data-id');
+			_c.pub.token = $('#' + _c.options.id).attr('data-token');
 			
 			$table = $('#' + _c.options.id + '-items');
 			
