@@ -14,6 +14,10 @@
 			_v.msgs.splice(0, 0, html);
 		},
 		clearMsgs: function() {
+			if(_v.timeout) {
+				clearTimeout(_v.timeout);
+				_v.timeout = null;
+			}
 			_v.msgs = [];
 			$('.k-validation-msgs').remove();
 		},
@@ -27,10 +31,6 @@
 					});
 				}, 4000);
 				var $close = $('<a href="javascript:void(0)" class="close">&times;</a>').appendTo($inner).click(function() {
-					if(_v.timeout) {
-						clearTimeout(_v.timeout);
-						_v.timeout = null;
-					}
 					V.clearMsgs();
 				});
 				var $list = $('<ul />').appendTo($inner);
