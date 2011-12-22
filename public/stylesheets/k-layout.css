@@ -15,6 +15,6 @@ body { background-color:transparent; }
 
 #header .container { position:relative; }
 
-#content { margin-top:60px; }
+#content { margin-top:60px;background-color:#eaeaea; }
 
 	#content-inner { padding:2em; }

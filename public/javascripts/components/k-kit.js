@@ -55,6 +55,7 @@
 		}
 		
 		_c.oninit = function() {
+			_c.pub.username = $('#' + _c.options.id).attr('data-username');
 			_c.pub.slug = $('#' + _c.options.id).attr('data-id');
 			_c.pub.token = $('#' + _c.options.id).attr('data-token');
 			
@@ -66,7 +67,7 @@
 				});
 			}
 			
-			K.Data.get('/' + _c.pub.slug + '/items', function(resp) {
+			K.Data.get('/' + _c.pub.username + '/' + _c.pub.slug + '/items', function(resp) {
 				_items = resp;
 				_renderItems();
 			});

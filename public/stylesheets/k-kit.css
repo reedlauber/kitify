@@ -38,7 +38,7 @@ input.error:-moz-placeholder { color:#bbb; }
 input.error::-webkit-input-placeholder { color:#bbb; }
 
 
-#content { background-color:#eaeaea;border:1px solid #666; }
+#content { border:1px solid #666; }
 
 #newkit input { margin-right:8px;padding:10px 8px;font-size:16px; }
 #newkit input, #newkit button { vertical-align:middle; }

@@ -49,7 +49,8 @@
 					}
 				});
 				$(form).bind('submit', function(evt, edited) {
-					K.Data.save('/items/' + edited.id, edited, function(resp) {
+					K.Data.save('/' + _c.manager.username + '/' + _c.manager.slug + '/items/' + edited.id, edited, function(resp) {
+						edited.token = _c.manager.token;
 						if(resp && resp.success !== false) {
 							resp.price = parseFloat(resp.price);
 							$editRow.remove();
@@ -94,7 +95,7 @@
 				} else if($target.hasClass('k-kit-ctrls-delete')) {
 					var id = $row.attr('data-id');
 					if(id) {
-						K.Data.del('/items/' + id, function(resp) {
+						K.Data.del('/' + _c.manager.username + '/' + _c.manager.slug + '/items/' + id, function(resp) {
 							$row.fadeOut(function() {
 								$row.remove();
 								$(K).trigger('item-deleted', [resp.id]);

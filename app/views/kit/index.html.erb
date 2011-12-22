@@ -2,7 +2,7 @@
 	<%= include_stylesheets :all, :kit, :media => "all" %>
 <% end %>
 
-<div id="kit" class="k-kit<%=(' editable' if @editable) %>" data-id="<%=@kit.slug %>" data-token="<%=@kit.token %>">
+<div id="kit" class="k-kit<%=(' editable' if @editable) %>" data-username="<%=@user.username %>" data-id="<%=@kit.slug %>" data-token="<%=@kit.token %>">
 	<div class="k-kit-title">
 		<div class="k-kit-title-label" data-val="<%=@kit.title %>">
 			<h1><%=@kit.title %></h1>

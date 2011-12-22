@@ -27,7 +27,12 @@ class Kit < ActiveRecord::Base
     slug = slug[0, limit]
     slug.downcase!
     
-    self.slug = slug + '-' + self.id.to_s
-    self.save
+    existing_count = Kit.where("slug = ?", slug).count
+    
+    if (existing_count > 0)
+      slug = slug + "-" + (existing_count + 1).to_s
+    end
+    
+    self.slug = slug
   end
 end

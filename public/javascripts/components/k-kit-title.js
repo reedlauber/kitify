@@ -15,9 +15,9 @@
 				_title = val;
 				$label.text(val);
 				$labelOuter.attr('data-val', val);
-				K.Data.save('/' + _c.manager.slug + '/' + _c.manager.token, { title:val }, function(resp) {
+				K.Data.save('/' + _c.manager.username + '/' + _c.manager.slug + '/' + _c.manager.token, { title:val }, function(resp) {
 					if(resp.success !== false){
-						window.location.href = '/' + resp.slug + '/' + resp.token;
+						window.location.href = '/' + _c.manager.username + '/' + resp.slug + '/' + resp.token;
 					}
 				});
 			}

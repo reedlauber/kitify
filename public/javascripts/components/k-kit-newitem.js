@@ -12,8 +12,6 @@
 		}, options);
 		
 		_c.oninit = function() {
-			var kitSlug = $('#kit').attr('data-id');
-			
 			var form = K.Form.setup({
 				context: '#newitem',
 				fields: _c.options.fields,
@@ -23,9 +21,9 @@
 			});
 			
 			$(form).bind('submit', function(evt, item) {
-				item.slug = kitSlug;
+				item.token = _c.manager.token;
 				
-				K.Data.save('/items', item, function(resp) {
+				K.Data.save('/' + _c.manager.username + '/' + _c.manager.slug + '/items', item, function(resp) {
 					if(resp && resp.success !== false) {
 						form.reset();
 						resp.price = parseFloat(resp.price);
