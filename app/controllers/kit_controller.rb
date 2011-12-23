@@ -34,7 +34,7 @@ class KitController < ApplicationController
       
       if(user_id == nil)
         user = User.new
-        user.username = User.generate_unique_username!
+        user.username = User.generate_unique_username
         user.save
         user_id = user.id
         cookies[:username] = { :value => user.username, :expires => 1.year.from_now }

@@ -10,15 +10,12 @@
 		<header id="header" class="topbar">
 			<div class="topbar-inner">
 				<div class="container">
-					<h3><a href="/">Kitify</a></h3>
-					<ul class="nav">
-						<li><a href="/about">About</a>
+					<h3><a href="/"><img src="/images/logo-small.png" /></a></h3>
+					<ul class="nav" data-active="<%=@active %>">
+						<li class="<%=("active" if @active == "about") %>"><a href="/about">About</a>
 						<li><a href="/new">Start New Kit</a></li>
 					</ul>
 					<ul class="nav secondary-nav">
-						<li class="k-header-notice">
-							Saving...
-						</li>
 						<% if @user_kits != nil && @user_kits.count > 0 %>
 						<li class="dropdown" data-dropdown="dropdown">
 							<a href="javascript:void(0)" class="dropdown-toggle">My Kits (<%=@user_kits.count.to_s %>)</a>
@@ -41,5 +38,15 @@
 		</div>
 	</div>
 	<%= yield :js %>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-17158679-4']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
 </body>
 </html>

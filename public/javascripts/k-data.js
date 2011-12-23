@@ -4,6 +4,10 @@
 	var _d = {};
 	
 	var $notice = $('.k-header-notice').hide();
+	if (!$notice.length) {
+		$notice = $('<li class="k-header-notice">Saving...</li>').prependTo($('.secondary-nav', '#header'));
+	}
+	$notice.hide();
 	_d.showNotice = function() {
 		$notice.addClass('k-header-notice-saving').text('Saving...').slideDown('fast');
 	};

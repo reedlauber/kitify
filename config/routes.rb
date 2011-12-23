@@ -7,6 +7,8 @@ Kitify::Application.routes.draw do
   post "/:username/:slug/items" => "item#create"
   delete "/:username/:slug/items/:id" => "item#destroy"
   
+  get "/about" => "content#about"
+  
   # funny name
   get "/funnyname" => "funnyname#index"
   

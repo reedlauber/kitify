@@ -1,9 +1,11 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   ActiveRecord::Base.include_root_in_json = false
-  before_filter :load_user_kits
+  before_filter :initialize_controller
   
-  def load_user_kits
+  def initialize_controller
+    @active = ""
+    
     username = cookies[:username]
     
     if (username != nil)
