@@ -3,9 +3,9 @@
 	
 	var _d = {};
 	
-	var $notice = $('.k-header-notice');
+	var $notice = $('.k-header-notice').hide();
 	_d.showNotice = function() {
-		$notice.addClass('k-header-notice-saving').text('Saving...').slideDown();
+		$notice.addClass('k-header-notice-saving').text('Saving...').slideDown('fast');
 	};
 	_d.hideNotice = function() {
 		$notice.removeClass('k-header-notice-saving').text('Saved.');
@@ -71,7 +71,11 @@
 		_d.ajax(path, 'POST', data, success, error, null, true);
 	};
 	
-	K.Data.del = function(path, success, error) {
-		_d.ajax(path, 'DELETE', {}, success, error, null, true);
+	K.Data.del = function(path, data, success, error) {
+		if(typeof data === 'function') {
+			error = success;
+			success = data;
+		}
+		_d.ajax(path, 'DELETE', data, success, error, null, true);
 	};
 })(Kitify);

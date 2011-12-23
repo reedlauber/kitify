@@ -75,15 +75,29 @@ class ItemController < ApplicationController
   end
   
   def destroy
-    user = User.where("username = ?", params[:username]).first
-    kit = Kit.where("slug = ? AND user_id = ?", params[:slug].downcase, user.id).first
-    item = Item.find(params[:id])
+    resp = { :success => false, :message => "Something went wrong." }
     
-    if(item != nil)
-      item.delete
-      render :json => { :success => true, :id => item.id }
+    user = User.where("username = ?", params[:username]).first
+    
+    if (user == nil)
+      resp[:message] = "User couldn't be found"
     else
-      render :json => { :success => false, :message => "Item couldn't be found." }
+      kit = Kit.where("slug = ? AND user_id = ? AND token = ?", params[:slug].downcase, user.id, params[:token]).first
+
+      if(kit == nil)
+        resp[:message] = "Kit couldn't be found."
+      else
+        item = Item.find(params[:id])
+        
+        if (item == nil)
+          resp[:message] = "Item couldn't be found."
+        else
+          item.delete
+          resp = { :success => true, :id => item.id }
+        end
+      end
     end
+    
+    render :json => resp
   end
 end

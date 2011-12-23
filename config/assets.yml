@@ -4,6 +4,7 @@ javascripts:
     all:
         - public/javascripts/vendor/jquery.min.js
         - public/javascripts/vendor/mustache.js
+        - public/javascripts/vendor/bootstrap-dropdown.js
         - public/javascripts/k-core.js
         - public/javascripts/k-util.js
         - public/javascripts/k-data.js

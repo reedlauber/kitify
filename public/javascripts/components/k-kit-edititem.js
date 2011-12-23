@@ -95,7 +95,7 @@
 				} else if($target.hasClass('k-kit-ctrls-delete')) {
 					var id = $row.attr('data-id');
 					if(id) {
-						K.Data.del('/' + _c.manager.username + '/' + _c.manager.slug + '/items/' + id, function(resp) {
+						K.Data.del('/' + _c.manager.username + '/' + _c.manager.slug + '/items/' + id, { token:_c.manager.token }, function(resp) {
 							$row.fadeOut(function() {
 								$row.remove();
 								$(K).trigger('item-deleted', [resp.id]);
