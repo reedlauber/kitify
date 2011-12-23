@@ -13,7 +13,9 @@ class FunnynameController < ApplicationController
     
     nouns = ['marmot', 'chihuahua', 'platypus', 'ninja', 'pirate', 'sailboat', 'couch', 'pillow', 'blanket', 'lighthouse', 
               'chair', 'cat', 'dog', 'turtle', 'sloth', 'toad', 'candle', 'river', 'hill', 'hamburger', 'hotdog',
-              'tree', 'bush', 'fountain', 'watefall', 'rug', 'window', 'finch', 'flower', 'elk', 'spider']
+              'tree', 'bush', 'fountain', 'waterfall', 'rug', 'window', 'finch', 'flower', 'elk', 'spider',
+              'salamander', 'emu', 'llama', 'brick', 'igloo', 'star', 'planet', 'stone', 'belt', 'pants', 
+              'socks']
     
     rnd = Random.new
     
