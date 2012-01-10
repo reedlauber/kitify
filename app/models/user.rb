@@ -1,21 +1,15 @@
 class User < ActiveRecord::Base
   has_many :kits
   
-  @@adjs = ["angry", "arid", "bad", "big", "bitter", "black", "blue", "blunt", "brave", "bright", 
-    "brown", "busy", "careful", "clever", "cold", "cool", "craggy", "damp", "daring", "dark", 
-    "deep", "dry", "fair", "fast", "fat", "fierce", "flat", "flat", "free", "fun", 
-    "fuzzy", "good", "green", "grey", "happy", "hard", "heavy", "hot", "kind", "lazy", 
-    "light", "long", "loud", "narrow", "noisy", "old", "orange", "pointy", "polite", "poor", 
-    "proud", "purple", "quiet", "red", "rich", "round", "sad", "salty", "shallow", "sharp", 
-    "short", "silent", "slow", "small", "soft", "sour", "stiff", "strong", "sweet", "tan", 
-    "thick", "thin", "tidy", "timid", "timorous", "useful", "violet", "warm", "weak", 
-    "weird", "wet", "windy", "yellow", "young"]
+  @@adjs = ["big", "brave", "bright", "busy", "careful", "clever", "cool", "daring", "fair", "fierce", 
+    "free", "fun", "fuzzy", "good", "green", "grey", "happy", "light", "long", "noisy", 
+    "orange", "polite", "proud", "purple", "quiet", "red", "rich", "sharp", "silent", "strong", 
+    "sweet", "tidy", "useful", "violet", "warm", "yellow", "young", "teal", "plaid", "grand", 
+    "super", "stable", "thoughtful", "calm", "powerful"]
   
-  @@nouns = ["belt", "blanket", "brick", "bush", "candle", "cat", "chair", "chihuahua", "couch", "dog", 
-    "dragon", "elk", "emu", "finch", "flower", "fountain", "hamburger", "hill", "hotdog", "igloo", 
+  @@nouns = ["cat", "chihuahua", "dragon", "elk", "emu", "finch", "flower", "fountain", "hamburger", "igloo", 
     "lighthouse", "llama", "marmot", "ninja", "pants", "pillow", "pirate", "planet", "platypus", "river", 
-    "rug", "sailboat", "salamander", "sloth", "socks", "spider", "star", "stone", "toad", "tree", 
-    "turtle", "waterfall", "window"]
+    "rug", "sailboat", "salamander", "sloth", "spider", "star", "stone", "tree", "turtle", "waterfall"]
     
   def self.generate_random_name num
     name = ''

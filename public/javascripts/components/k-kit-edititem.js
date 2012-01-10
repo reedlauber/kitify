@@ -3,11 +3,11 @@
 		var _c = K.Component({
 			id:'edititem',
 			fields: [
-				{ id:'item-name', prop:'name', required:true },
-				{ id:'item-quantity', prop:'quantity', required:true },
-				{ id:'item-merchanturl', prop:'merchant_url', required:true },
-				{ id:'item-price', prop:'price', required:true },
-				{ id:'item-notes', prop:'notes' }
+				{ id:'item-name', prop:'name', required:true, submit:true },
+				{ id:'item-quantity', prop:'quantity', required:true, submit:true },
+				{ id:'item-merchanturl', prop:'merchant_url', required:true, submit:true },
+				{ id:'item-price', prop:'price', required:true, submit:true },
+				{ id:'item-notes', prop:'notes', submit:true }
 			]
 		}, options);
 		
@@ -49,8 +49,8 @@
 					}
 				});
 				$(form).bind('submit', function(evt, edited) {
+					edited.token = _c.manager.token;
 					K.Data.save('/' + _c.manager.username + '/' + _c.manager.slug + '/items/' + edited.id, edited, function(resp) {
-						edited.token = _c.manager.token;
 						if(resp && resp.success !== false) {
 							resp.price = parseFloat(resp.price);
 							$editRow.remove();

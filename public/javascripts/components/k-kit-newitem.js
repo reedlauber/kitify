@@ -7,7 +7,7 @@
 				{ id:'newitem-quantity', prop:'quantity', label:'Quantity', validator:'positiveInteger', required:true },
 				{ id:'newitem-merchanturl', prop:'merchant_url', label:'Merchant URL', validator:'url', required:true },
 				{ id:'newitem-price', prop:'price', label:'Price', validator:'positiveNumeric', required:true },
-				{ id:'newitem-notes', prop:'notes', label:'Notes' }
+				{ id:'newitem-notes', prop:'notes', label:'Notes', submit:true }
 			]
 		}, options);
 		

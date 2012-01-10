@@ -10,6 +10,7 @@ javascripts:
         - public/javascripts/k-data.js
         - public/javascripts/k-manager.js
         - public/javascripts/k-component.js
+        - public/javascripts/k-message.js
         - public/javascripts/k-validation.js
         - public/javascripts/k-form.js
     
@@ -21,6 +22,9 @@ javascripts:
         - public/javascripts/components/k-kit-newitem.js
         - public/javascripts/components/k-kit-edititem.js
         - public/javascripts/components/k-kit.js
+
+    howitworks:
+        - public/javascripts/components/k-howitworks.js
 
 stylesheets:
     all:
@@ -34,3 +38,6 @@ stylesheets:
         
     kit:
         - public/stylesheets/k-kit.css
+    
+    howitworks:
+        - public/stylesheets/k-howitworks.css

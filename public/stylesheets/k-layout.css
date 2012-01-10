@@ -1,6 +1,6 @@
-/* Validation Messages */
-.k-validation-msgs { position:fixed;top:40px;right:0;left:0;width:640px;margin:0 auto; }
-	.k-validation-msgs .alert-message { margin-bottom:0;border-radius:0; }
+/* Messages */
+.k-message { position:fixed;top:40px;right:0;left:0;width:640px;margin:0 auto; }
+	.k-message .alert-message { margin-bottom:0;border-radius:0; }
 
 /* Ajax Notice */
 /* position:absolute;top:0;right:0;height:40px; */

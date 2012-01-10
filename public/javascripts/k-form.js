@@ -12,7 +12,7 @@
 		_v.clearMsgs();
 		
 		$.each(fields, function(i, field) {
-			var $f = $('#' + field.id).removeClass('error'),
+			var $f = field.$ctrl.removeClass('error'),
 				val = _f.getValue(field, $f),
 				fieldValid = true;
 			
@@ -51,6 +51,9 @@
 		return data;
 	};
 	
+	_f.setupFields = function(context, fields) {
+	};
+	
 	K.Form = {};
 	
 	K.Form.setup = function(options) {
@@ -61,16 +64,29 @@
 				data: {},
 				btns: {}
 			}, options);
+			
+		function _submit() {
+			var data = _f.validate(_options.fields);
+			if(data) {
+				data = $.extend(_options.data, data);
+				$(_self).trigger('submit', [data]);
+			}
+		}
 		
-		var $fields = $('.k-field', _options.context);
+		$.each(_options.fields, function(i, field) {
+			field.$ctrl = $('#' + field.id, _options.context);
+			if(field.submit) {
+				field.$ctrl.keyup(function(evt) {
+					if(evt.which === 13) {
+						_submit();
+					}
+				});
+			}
+		});
 		
 		if(_options.btns.submit) {
 			$(_options.btns.submit).click(function() {
-				var data = _f.validate(_options.fields);
-				if(data) {
-					data = $.extend(_options.data, data);
-					$(_self).trigger('submit', [data]);
-				}
+				_submit();
 			});
 		}
 		

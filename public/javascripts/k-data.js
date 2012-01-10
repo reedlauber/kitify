@@ -38,7 +38,7 @@
                 error.call(K.Data, errEvt);
             }
             if (errEvt.message && status !== 'abort') {
-                $(K).trigger('message', [resp.message || 'Something bad happened with your request.', { error: true}]);
+				K.Message.show(resp.message || 'Something bad happened with your request.', 'error');
             }
         }
 

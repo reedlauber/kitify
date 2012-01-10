@@ -1,8 +1,7 @@
 (function(K) {
 	/* Private helper */
 	var _v = {
-		msgs: [],
-		timeout: null
+		msgs: []
 	};
 	
 	/* Public Validation Namespace */
@@ -14,30 +13,16 @@
 			_v.msgs.splice(0, 0, html);
 		},
 		clearMsgs: function() {
-			if(_v.timeout) {
-				clearTimeout(_v.timeout);
-				_v.timeout = null;
-			}
-			_v.msgs = [];
-			$('.k-validation-msgs').remove();
+			K.Message.clear();
 		},
 		showMsgs: function() {
 			if(_v.msgs.length) {
-				var $vm = $('<div class="k-validation-msgs k-shadow" />').hide().prependTo('#container');
-				var $inner = $('<div class="alert-message block-message error" />').appendTo($vm);
-				_v.timeout = setTimeout(function() {
-					$vm.slideUp('fast', function() {
-						V.clearMsgs();
-					});
-				}, 4000);
-				var $close = $('<a href="javascript:void(0)" class="close">&times;</a>').appendTo($inner).click(function() {
-					V.clearMsgs();
-				});
-				var $list = $('<ul />').appendTo($inner);
+				var html = '<ul>';
 				$.each(_v.msgs, function(i, msg) {
-					$('<li />').html(msg).appendTo($list);
-				});
-				$vm.slideDown();
+					html += '<li>' + msg + '</li>';
+				});				
+				html += '</ul>';
+				K.Message.show(html, 'error');
 			}
 		}
 	};

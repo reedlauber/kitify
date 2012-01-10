@@ -3,10 +3,12 @@
 <% end %>
 
 <div id="home">
-	<h1><img src="/images/logo-large.png" /></h1>
-	<h2 class="k-scriptfont">Better Bills of Materials</h2>
+	<div id="home-diagram"></div>
 	
-	<a href="/new" class="btn primary">Start a new Kit</a>
+	<div id="home-btns">
+		<a href="/new" class="btn large primary">Try it out!</a>
+		<a href="/howitworks" class="btn large info">Learn more</a>
+	</div>
 </div>
 
 <% content_for :js do %>
