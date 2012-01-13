@@ -32,6 +32,9 @@
 			</div>
 		</header>
 		<div id="content" class="container">
+			<% if @banner != nil %>
+			<div id="banner" class="k-scriptfont"><%=@banner %></div>
+			<% end %>
 			<div id="content-inner" class="k-shadow-big">
 				<%= yield %>
 			</div>

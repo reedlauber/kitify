@@ -1,5 +1,7 @@
 class KitController < ApplicationController
   def index
+    @banner = "Better Bill of Materials";
+    
     @user = User.where("username = ?", params[:username]).first
     
     if (@user == nil)

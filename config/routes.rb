@@ -8,6 +8,7 @@ Kitify::Application.routes.draw do
   delete "/:username/:slug/items/:id" => "item#destroy"
   
   get "/about" => "content#about"
+  get "/buynow" => "content#buynow"
   get "/howitworks" => "content#howitworks"
   
   # funny name

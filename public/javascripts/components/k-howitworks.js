@@ -2,7 +2,7 @@
 	K.HowItWorks = function(options) {
 		var _c = K.Component({
 			id:'howitworks',
-			duration: 3200,
+			duration: 3800,
 			_times: 50
 		}, options);
 		

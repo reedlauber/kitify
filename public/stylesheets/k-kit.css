@@ -1,3 +1,7 @@
+.k-kit { position:relative; }
+
+	.k-kit-buynow { position:absolute;top:0;right:0; }
+
 .k-kit-title-label h1 { display:inline-block;margin-left:-8px;margin-bottom:0;padding:0 8px 5px;border:1px solid transparent;color:#93d050;text-shadow:1px 1px 1px rgba(0, 0, 0, 0.1); }
 	.editable .k-kit-title-label h1:hover { background-color:rgba(255, 243, 176, 0.1);border-color:#ccc; }
 	
@@ -38,7 +42,11 @@ input.error:-moz-placeholder { color:#bbb; }
 input.error::-webkit-input-placeholder { color:#bbb; }
 
 
-#content { border:1px solid #666; }
+#content { }
+
+	#banner { font-size:2.0em;margin-bottom:0.6em;text-shadow:1px 1px 0 rgba(255, 255, 255, 0.8); }
+
+	#content-inner { border:1px solid #666; }
 
 #newkit input { margin-right:8px;padding:10px 8px;font-size:16px; }
 #newkit input, #newkit button { vertical-align:middle; }

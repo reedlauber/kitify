@@ -16,6 +16,6 @@ body { background-color:transparent; }
 
 #header .container { position:relative; }
 
-#content { margin-top:60px;background-color:#eaeaea; }
+#content { margin-top:60px; }
 
-	#content-inner { padding:2em; }
+	#content-inner { padding:2em;background-color:#eaeaea; }
