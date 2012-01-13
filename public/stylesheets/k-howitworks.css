@@ -1,6 +1,6 @@
 #howitworks { }
 
-.slides { height:200px;width:100%;position:relative;overflow:hidden; }
+.slides { height:509px;width:100%;position:relative;overflow:hidden; }
 	.slide { position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;background-repeat:no-repeat;background-size:100%; }
 	.slide-previous { right:0;left:auto;z-index:2; }
 	.slide-active { z-index:3; }
@@ -14,4 +14,7 @@
 	.slide-indicators { display:inline-block; }
 		.slide-indicators li { display:inline-block;height:8px;width:8px;background-color:#aaa;border-radius:4px; }
 		.slide-indicators .slide-indicator-active { background-color:#666; }
-	.slide-prev, .slide-next { display:line-block; }
+	.slide-prev, .slide-next { display:inline-block;margin-left:4px;width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent; }
+	.slide-prev { border-right:8px solid #aaa; }
+	.slide-next { border-left:8px solid #aaa; }
+	.slide-prev:hover, .slide-next:hover { border-right-color:#666;border-left-color:#666; }
