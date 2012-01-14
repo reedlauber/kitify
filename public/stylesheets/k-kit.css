@@ -1,3 +1,10 @@
+.k-kit-share { position:relative; }
+	.k-kit-sharebox { position:absolute;top:100%;right:-32px;margin-top:8px;padding:4px 8px 4px 4px;white-space:nowrap;background-color:#222;color:#f0f0f0; }
+	.k-kit-sharebox-arrow { position:absolute;bottom:100%;right:48px;height:0;width:0;border-right:8px solid transparent;border-bottom:8px solid #222;border-left:8px solid transparent; }
+	.k-kit-sharebox input { margin-right:4px; }
+	.k-kit-sharebox-close { position:absolute;top:4px;right:4px;height:8px;width:8px;border-radius:4px;background-color:#777; }
+	.k-kit-sharebox-close:after { position:absolute;top:0;left:0;content:'\d7';color:#f0f0f0; }
+
 .k-kit { position:relative; }
 
 	.k-kit-buynow { position:absolute;top:0;right:0; }

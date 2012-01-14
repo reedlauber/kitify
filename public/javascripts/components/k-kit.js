@@ -3,7 +3,8 @@
 		var _c = K.Component({ id:'kit', components:{} }, options),
 			_items = [];
 		
-		var $table;
+		var $shareBox,
+			$table;
 		
 		var _noItemsTmpl = '<tr class="k-kit-items-none"><td colspan="6">Start adding items above.</td></tr>';
 		var _itemTmpl = ['<tr data-id="{{id}}">',
@@ -54,10 +55,37 @@
 			}
 		}
 		
+		function _setupShareBox() {
+			var $share = $('<li class="k-kit-share"></li>').prependTo('.secondary-nav');
+			$('<a href="javascript:void(0)">Share</a>').appendTo($share).click(function() {
+				var open = $shareBox.data('open');
+				if(open) {
+					$shareBox.data('open', false).stop().fadeOut();
+				} else {
+					$shareBox.data('open', true).stop().fadeIn();
+				}
+			});
+			
+			var shareUrl = 'http://kitify.com/' + _c.pub.username + '/' + _c.pub.slug;
+			$shareBox = $('<div class="k-kit-sharebox k-corner-all k-shadow" />').appendTo($share).hide()
+							.append('<input type="text" class="k-input" value="' + shareUrl + '" />')
+							.append('Copy and share with friends')
+							.append('<div class="k-kit-sharebox-arrow" />');
+							//.append('<div class="k-kit-sharebox-close"></div>');
+			
+			setTimeout(function() {
+				$shareBox.data('open', true).stop().fadeIn();
+			}, 2000);
+		}
+		
 		_c.oninit = function() {
 			_c.pub.username = $('#' + _c.options.id).attr('data-username');
 			_c.pub.slug = $('#' + _c.options.id).attr('data-id');
 			_c.pub.token = $('#' + _c.options.id).attr('data-token');
+			
+			if(_c.pub.token) {
+				_setupShareBox();	
+			}
 			
 			$table = $('#' + _c.options.id + '-items');
 			

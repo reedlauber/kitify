@@ -13,6 +13,10 @@ class KitController < ApplicationController
         render "notfound"
       else
         @editable = params[:token] != nil && params[:token] == @kit.token
+        
+        if(!@editable)
+          @kit.token = ''
+        end
 
         @items = Item.where("kit_id = ?", @kit.id)
       end
